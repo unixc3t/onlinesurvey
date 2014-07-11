@@ -58,10 +58,9 @@
 	</div>
 	</hgroup> </header>
 	<!-- end of header bar -->
-
 	<section id="secondary_bar">
 	<div class="user">
-		<p>您好，管理员 ${user.username}</p>
+		<p>您好，管理员 ${username} (女士/先生)</p>
 	</div>
 	<div class="breadcrumbs_container">
 		<article class="breadcrumbs"> <a href="#">宜居乡村社区健康调查平台</a>
@@ -71,26 +70,16 @@
 	</section>
 	<!-- end of secondary bar -->
 
-	<aside id="sidebar" class="column"> <!-- 	<form class="quick_search">
-		<input type="text" value="Quick Search"
-			onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
-	</form> -->
+	<aside id="sidebar" class="column"> 
 	<hr />
-	<h3>一、基本情况</h3>
+	<h3>基本检索</h3>
 	<ul class="toggle">
-		<li class="icn_tags"><a href="#">基本情况</a></li>
+		<li class="icn_tags"><a href="#">通过村委会检索</a></li>
+		<li class="icn_tags"><a href="#">通过用地面积检索</a></li>
 	</ul>
-	<h3>二、环境现状</h3>
+	<h3>敬请期待</h3>
 	<ul class="toggle">
-		<li class="icn_photo"><a href="#">环境现状</a></li>
-	</ul>
-	<h3>三、生态资产</h3>
-	<ul class="toggle">
-		<li class="icn_view_users"><a href="#">生态资产</a></li>
-	</ul>
-	<h3>四、景观现状</h3>
-	<ul class="toggle">
-		<li class="icn_tags"><a href="#">景观现状</a></li>
+		<!-- <li class="icn_photo"><a href="#">环境现状</a></li> -->
 	</ul>
 
 	<footer>
@@ -108,7 +97,7 @@
 	<h4 class="alert_info">欢迎使用宜居乡村社区健康调查平台</h4>
 
 	<article class="module width_full"> <header>
-	<h3>基本情况</h3>
+	<h3>检索类型：村委会</h3>
 	</header>
 	<div class="module_content">
 	
@@ -118,23 +107,7 @@
 	</article>
 	
 	<article class="module width_full"> <header>
-	<h3>环境现状</h3>
-	</header>
-	<div class="module_content">
-		<div class="clear"></div>
-	</div>
-	</article>
-	
-	<article class="module width_full"> <header>
-	<h3>生态资产</h3>
-	</header>
-	<div class="module_content">
-		<div class="clear"></div>
-	</div>
-	</article>
-	
-	<article class="module width_full"> <header>
-	<h3>景观现状</h3>
+	<h3>检索类型：用地面积</h3>
 	</header>
 	<div class="module_content">
 		<div class="clear"></div>

@@ -23,7 +23,7 @@ public class AcountController {
 			HttpServletRequest request) {
 		User user = new User(username, password);
 		if (accountService.login(user)) {
-			request.getSession().setAttribute("user", user);
+			request.getSession().setAttribute("username", username);
 			return new JspView("admin.index");
 		} else {
 			return new JspView("admin.login");
