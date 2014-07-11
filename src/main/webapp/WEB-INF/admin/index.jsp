@@ -66,7 +66,7 @@
 	<div class="breadcrumbs_container">
 		<article class="breadcrumbs"> <a href="index.html">宜居乡村社区健康调查平台</a>
 		<div class="breadcrumb_divider"></div>
-		<a class="current">数据浏览</a></article>
+		<a class="current">数据检索</a></article>
 	</div>
 	</section>
 	<!-- end of secondary bar -->
