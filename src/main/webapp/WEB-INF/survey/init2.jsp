@@ -50,18 +50,18 @@
 <body>
 	<header id="header"> <hgroup>
 	<h1 class="site_title">
-		<a href="#">管理员用户主页</a>
+		<a href="#">村委会用户主页</a>
 	</h1>
 	<h2 class="section_title">宜居乡村社区环境健康评估与质量提升技术</h2>
 	<div class="btn_view_site">
-		<a href="logout">退出登录</a>
+		<a href="logout">离开</a>
 	</div>
 	</hgroup> </header>
 	<!-- end of header bar -->
 
 	<section id="secondary_bar">
 	<div class="user">
-		<p>您好，管理员 ${user.username}</p>
+		<p>您好，欢迎参加问卷调查</p>
 	</div>
 	<div class="breadcrumbs_container">
 		<article class="breadcrumbs"> <a href="#">宜居乡村社区健康调查平台</a>
@@ -78,19 +78,25 @@
 	<hr />
 	<h3>一、基本情况</h3>
 	<ul class="toggle">
-		<li class="icn_tags"><a href="#">基本情况</a></li>
+		<li class="icn_tags"><a href="#">1.村庄基本情况</a></li>
+		<li class="icn_tags"><a href="#">2.人口情况</a></li>
+		<li class="icn_tags"><a href="#">3.社会服务与基础设施</a></li>
 	</ul>
-	<h3>二、环境现状</h3>
+	<h3>二、健康评估</h3>
 	<ul class="toggle">
-		<li class="icn_photo"><a href="#">环境现状</a></li>
+		<li class="icn_photo"><a href="#">1.人居环境</a></li>
+		<li class="icn_photo"><a href="#">2.社会发展</a></li>
+		<li class="icn_photo"><a href="#">3.生态资源</a></li>
+		<li class="icn_photo"><a href="#">4.环境整治</a></li>
+		<li class="icn_photo"><a href="#">5.安全防灾</a></li>
 	</ul>
 	<h3>三、生态资产</h3>
 	<ul class="toggle">
-		<li class="icn_view_users"><a href="#">生态资产</a></li>
+		<li class="icn_view_users"><a href="#">1.生态资产</a></li>
 	</ul>
 	<h3>四、景观现状</h3>
 	<ul class="toggle">
-		<li class="icn_tags"><a href="#">景观现状</a></li>
+		<li class="icn_tags"><a href="#">1.景观现状</a></li>
 	</ul>
 
 	<footer>

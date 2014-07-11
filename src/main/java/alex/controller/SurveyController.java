@@ -1,9 +1,8 @@
 package alex.controller;
 
 import org.nutz.ioc.annotation.InjectName;
-import org.nutz.mvc.View;
 import org.nutz.mvc.annotation.At;
-import org.nutz.mvc.view.JspView;
+import org.nutz.mvc.annotation.Ok;
 
 /**
  * @author	Liuzhilong<alexmaven@icloud.com>
@@ -12,7 +11,12 @@ import org.nutz.mvc.view.JspView;
 @InjectName("surveyController")
 public class SurveyController {
 	@At("initsu")
-	public View initsurvey() {
-		return new JspView("survey.init");
+	@Ok("jsp:survey.init")
+	public void initsurvey() {
+	}
+	
+	@At("initsp")
+	@Ok("jsp:survey.init2")
+	public void initsurvey2() {
 	}
 }
