@@ -70,12 +70,12 @@
 	</section>
 	<!-- end of secondary bar -->
 
-	<aside id="sidebar" class="column"> 
+	<aside id="sidebar" class="column">
 	<hr />
 	<h3>基本检索</h3>
 	<ul class="toggle">
-		<li class="icn_tags"><a href="#">通过村委会检索</a></li>
-		<li class="icn_tags"><a href="#">通过用地面积检索</a></li>
+		<li class="icn_tags"><a href="#cwh">通过村委会检索</a></li>
+		<li class="icn_tags"><a href="#ydmj">通过用地面积检索</a></li>
 	</ul>
 	<h3>敬请期待</h3>
 	<ul class="toggle">
@@ -95,25 +95,45 @@
 
 	<section id="main" class="column">
 	<h4 class="alert_info">欢迎使用宜居乡村社区健康调查平台</h4>
-
-	<article class="module width_full"> <header>
-	<h3>检索类型：村委会</h3>
-	</header>
-	<div class="module_content">
-	
-	
-		<div class="clear"></div>
-	</div>
-	</article>
-	
-	<article class="module width_full"> <header>
-	<h3>检索类型：用地面积</h3>
-	</header>
-	<div class="module_content">
-		<div class="clear"></div>
-	</div>
-	</article>
-	
+	<form action="getMsgByCWH" method="post">
+		<article class="module width_full"> <header> <a
+			name="cwh" />
+		<h3>检索类型：村委会</h3>
+		</header>
+		<div class="module_content">
+			<fieldset>
+				<label>请输入需要筛选的村委会</label> <input type="text" id="cunweihui"
+					name="cunweihui">
+			</fieldset>
+			<div class="clear"></div>
+		</div>
+		<footer>
+		<div class="submit_link">
+			<input type="submit" value="开始检索" class="alt_btn">
+		</div>
+		</footer> </article>
+	</form>
+	<form action="getMsgByYDMJ" method="post">
+		<article class="module width_full"> <header> <a
+			name="ydmj" />
+		<h3>检索类型：用地面积</h3>
+		</header>
+		<div class="module_content">
+			<fieldset style="width: 48%; float: left; margin-right: 3%;">
+				<label>用地面积下限</label> <input type="text" style="width: 92%;">
+			</fieldset>
+			<fieldset style="width: 48%; float: right;">
+				<label>用地面积上限</label> <input type="text" style="width: 92%;">
+			</fieldset>
+			<div class="clear"></div>
+			<!-- 换行 -->
+		</div>
+		<footer>
+		<div class="submit_link">
+			<input type="submit" value="开始检索" class="alt_btn">
+		</div>
+		</footer> </article>
+	</form>
 	<div class="clear"></div>
 	<div class="spacer"></div>
 	</section>
