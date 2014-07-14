@@ -1,4 +1,4 @@
-package alex.impl.service;
+package alex.service.impl;
 
 import java.util.List;
 

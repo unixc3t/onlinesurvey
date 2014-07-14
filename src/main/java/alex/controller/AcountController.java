@@ -20,7 +20,7 @@ public class AcountController {
 	private AccountService accountService;
 
 	@At("login")
-	public View useLogin(@Param(value = "..")User user,
+	public View useLogin(@Param(value = "..") User user,
 			HttpServletRequest request) {
 		if (accountService.login(user)) {
 			request.getSession().setAttribute("username", user.getUsername());

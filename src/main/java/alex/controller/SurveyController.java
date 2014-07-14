@@ -19,4 +19,9 @@ public class SurveyController {
 	@Ok("jsp:survey.init2")
 	public void initsurvey2() {
 	}
+	
+	@At("ptyh")
+	public void ptyh() {
+		
+	}
 }

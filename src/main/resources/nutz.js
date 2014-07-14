@@ -33,14 +33,6 @@ var ioc = {
 			}
 		}
 	},
-	dataService : {
-		type : "alex.impl.service.DataServiceImpl",
-		fields : {
-			dao : {
-				refer : 'dao'
-			}
-		}
-	},
 	surveyController : {
 		type : "alex.controller.SurveyController",
 		fields : {
