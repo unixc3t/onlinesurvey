@@ -18,7 +18,15 @@ var ioc = {
         } ]  
     },
     accountService : {
-		type : "alex.impl.service.AccountServiceImpl",
+		type : "alex.service.impl.AccountServiceImpl",
+		fields : {
+			dao : {
+				refer : 'dao'
+			}
+		}
+	},
+	surveyService : {
+		type : "alex.service.impl.SurveyServiceImpl",
 		fields : {
 			dao : {
 				refer : 'dao'
@@ -36,9 +44,9 @@ var ioc = {
 	surveyController : {
 		type : "alex.controller.SurveyController",
 		fields : {
-/*			accountService : {
-				refer : 'accountService'
-			}*/
+			surveyService : {
+				refer : 'surveyService'
+			}
 		}
 	}
 }

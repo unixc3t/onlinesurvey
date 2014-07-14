@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" import="java.util.*" pageEncoding="UTF-8"%>
 
 <%@include file="/common/common.jsp"%>
 
@@ -14,8 +13,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 <title>宜居乡村社区健康调查平台</title>
 
 <script type="text/javascript">
@@ -66,8 +63,7 @@
 		<p>您好，管理员 ${username} (女士/先生)</p>
 	</div>
 	<div class="breadcrumbs_container">
-		<article class="breadcrumbs"> <a href="#"> 宜居乡村社区健康调查平台
-		</a>
+		<article class="breadcrumbs"> <a href="#"> 宜居乡村社区健康调查平台 </a>
 		<div class="breadcrumb_divider"></div>
 		<a class="current"> 数据检索 </a> </article>
 	</div>
@@ -100,14 +96,12 @@
 	<section id="main" class="column">
 	<h4 class="alert_info">欢迎使用宜居乡村社区健康调查平台</h4>
 	<form action="getMsgByCWH" method="post">
-		<article class="module width_full"> <header> <a
-			name="cwh" />
+		<article class="module width_full"> <header> <a name="cwh" />
 		<h3>检索类型：村委会</h3>
 		</header>
 		<div class="module_content">
 			<fieldset>
-				<label> 请输入需要筛选的村委会 </label> <input type="text" id="cunweihui"
-					name="cunweihui">
+				<label>输入村委会名称 </label> <input type="text" id="cunweihui" name="cunweihui">
 			</fieldset>
 			<div class="clear"></div>
 		</div>
@@ -118,8 +112,7 @@
 		</footer> </article>
 	</form>
 	<form action="getMsgByYDMJ" method="post">
-		<article class="module width_full"> <header> <a
-			name="ydmj" />
+		<article class="module width_full"> <header> <a name="ydmj" />
 		<h3>检索类型：用地面积</h3>
 		</header>
 		<div class="module_content">

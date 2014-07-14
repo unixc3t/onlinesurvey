@@ -6,7 +6,7 @@
 	<display-name>OnlineSurvey</display-name>
 
 	<welcome-file-list>
-		<welcome-file>/WEB-INF/welcome.html</welcome-file>
+		<welcome-file>/WEB-INF/welcome.jsp</welcome-file>
 	</welcome-file-list>
 
 	<filter>

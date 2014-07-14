@@ -10,10 +10,28 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> -->
 <title>宜居乡村社区健康调查平台</title>
-
+<script type="text/javascript">
+function validate_required(field,alerttxt) {
+	with (field) {
+		if (value==null||value=="") {
+			alert(alerttxt);return false}
+		else {
+			return true
+		}
+	}
+}
+function validate_form(thisform) {
+	with (thisform) {
+		if (validate_required(username,"用户名必填!")==false) {
+			username.focus();
+			return false;
+		}
+	}
+}
+</script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		$(".tablesorter").tablesorter();
@@ -101,7 +119,7 @@
 	<h4 class="alert_info">欢迎使用宜居乡村社区健康调查平台</h4>
 	<div id="bodystart">
 		<a name="jbqk" />
-		<form action="ptyh" method="post">
+		<form action="ptyh" onsubmit="return validate_form(this)" method="post">
 			<article class="module width_full"> <header>
 			<h3>基本情况</h3>
 			</header>
