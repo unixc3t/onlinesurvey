@@ -3,9 +3,12 @@
 
 <%@include file="/common/common.jsp"%>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+<!DOCTYPE 
+    html
+    PUBLIC
+    "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -50,11 +53,11 @@
 <body>
 	<header id="header"> <hgroup>
 	<h1 class="site_title">
-		<a href="#">管理员用户主页</a>
+		<a href="#"> 管理员用户主页 </a>
 	</h1>
 	<h2 class="section_title">宜居乡村社区环境健康评估与质量提升技术</h2>
 	<div class="btn_view_site">
-		<a href="logout">退出登录</a>
+		<a href="logout"> 退出登录 </a>
 	</div>
 	</hgroup> </header>
 	<!-- end of header bar -->
@@ -63,9 +66,10 @@
 		<p>您好，管理员 ${username} (女士/先生)</p>
 	</div>
 	<div class="breadcrumbs_container">
-		<article class="breadcrumbs"> <a href="#">宜居乡村社区健康调查平台</a>
+		<article class="breadcrumbs"> <a href="#"> 宜居乡村社区健康调查平台
+		</a>
 		<div class="breadcrumb_divider"></div>
-		<a class="current">数据检索</a></article>
+		<a class="current"> 数据检索 </a> </article>
 	</div>
 	</section>
 	<!-- end of secondary bar -->
@@ -74,8 +78,8 @@
 	<hr />
 	<h3>基本检索</h3>
 	<ul class="toggle">
-		<li class="icn_tags"><a href="#cwh">通过村委会检索</a></li>
-		<li class="icn_tags"><a href="#ydmj">通过用地面积检索</a></li>
+		<li class="icn_tags"><a href="#cwh"> 通过村委会检索 </a></li>
+		<li class="icn_tags"><a href="#ydmj"> 通过用地面积检索 </a></li>
 	</ul>
 	<h3>敬请期待</h3>
 	<ul class="toggle">
@@ -85,10 +89,10 @@
 	<footer>
 	<hr />
 	<p>
-		<strong>Copyright &copy; 2014 宜居乡村社区健康调查平台</strong>
+		<strong> Copyright &copy; 2014 宜居乡村社区健康调查平台 </strong>
 	</p>
 	<p>
-		Design by <a href="#">Alex</a>
+		Design by <a href="#"> Alex </a>
 	</p>
 	</footer> </aside>
 	<!-- end of sidebar -->
@@ -102,7 +106,7 @@
 		</header>
 		<div class="module_content">
 			<fieldset>
-				<label>请输入需要筛选的村委会</label> <input type="text" id="cunweihui"
+				<label> 请输入需要筛选的村委会 </label> <input type="text" id="cunweihui"
 					name="cunweihui">
 			</fieldset>
 			<div class="clear"></div>
@@ -120,10 +124,10 @@
 		</header>
 		<div class="module_content">
 			<fieldset style="width: 48%; float: left; margin-right: 3%;">
-				<label>用地面积下限</label> <input type="text" style="width: 92%;">
+				<label> 用地面积下限 </label> <input type="text" style="width: 92%;">
 			</fieldset>
 			<fieldset style="width: 48%; float: right;">
-				<label>用地面积上限</label> <input type="text" style="width: 92%;">
+				<label> 用地面积上限 </label> <input type="text" style="width: 92%;">
 			</fieldset>
 			<div class="clear"></div>
 			<!-- 换行 -->

@@ -1,5 +1,5 @@
-<link rel="icon" href="images/bm.ico" type="image/x-icon">
-<link rel="shortcut icon" href="images/bm.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
 <link rel="stylesheet" href="css/layout.css" type="text/css"
 	media="screen" />
