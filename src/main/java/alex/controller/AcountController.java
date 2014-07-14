@@ -6,6 +6,7 @@ import org.nutz.ioc.annotation.InjectName;
 import org.nutz.mvc.View;
 import org.nutz.mvc.annotation.At;
 import org.nutz.mvc.annotation.Ok;
+import org.nutz.mvc.annotation.Param;
 import org.nutz.mvc.view.JspView;
 
 import alex.pojo.User;
@@ -19,11 +20,10 @@ public class AcountController {
 	private AccountService accountService;
 
 	@At("login")
-	public View useLogin(String username, String password,
+	public View useLogin(@Param(value = "..")User user,
 			HttpServletRequest request) {
-		User user = new User(username, password);
 		if (accountService.login(user)) {
-			request.getSession().setAttribute("username", username);
+			request.getSession().setAttribute("username", user.getUsername());
 			return new JspView("admin.index");
 		} else {
 			return new JspView("admin.login");
