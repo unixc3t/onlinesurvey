@@ -10,10 +10,13 @@ import java.util.Date;
 import javax.servlet.http.HttpServletRequest;
 
 import org.nutz.ioc.annotation.InjectName;
+import org.nutz.mvc.annotation.AdaptBy;
 import org.nutz.mvc.annotation.At;
 import org.nutz.mvc.annotation.Ok;
 import org.nutz.mvc.annotation.Param;
+import org.nutz.mvc.upload.UploadAdaptor;
 
+import alex.pojo.Cwhyh;
 import alex.pojo.Ptyh;
 import alex.service.SurveyService;
 
@@ -43,13 +46,15 @@ public class SurveyController {
 		request.setAttribute("ifok", "1");
 	}
 	
-	/*@At("cwhyh")
+	@At("cwhyh")
 	@Ok("jsp:welcome")
-	public void ptyh(@Param(value = "..") Cwh cwh,HttpServletRequest request) {
-		ptyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,DateFormat.LONG).format(new Date()));
-		surveyService.InsPtyh(ptyh);
+	@AdaptBy(type = UploadAdaptor.class, args = { "ioc:myUpload" })
+	public void ptyh(@Param(value = "..") Cwhyh cwhyh,HttpServletRequest request) {
+
+		
+		
 		request.setAttribute("ifok", "1");
-	}*/
+	}
 	
 	public void copyFile(String oldPath, String newPath) {
 		try {

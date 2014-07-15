@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>宜居乡村社区健康调查平台</title>
+<title>宜居乡村社区环境健康调查平台</title>
 
 <!--- CSS --->
 <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -25,7 +25,7 @@
 <body>
 	<div id="container">
 		<div class="welcome">
-			<div class="welcome-user">欢迎参加宜居乡村社区健康调查!</div>
+			<div class="welcome-user">欢迎参加宜居乡村社区环境健康调查!</div>
 			<div class="welcome-text">本次宜居乡村社区调研是“十二•五”国家科技支撑计划重大项目“村镇宜居社区与小康住宅重大科技工程”中的课题“乡村社区环境优化 建设关键技术研究”的重要内容之一。本课题将开展农村生活垃圾分类收集与转运技术；因地制宜的农村有机垃圾生物处理与资源化利用 技术；宜居社区人文环境建设和整治技术；宜居社区自然生态环境保护与建设技术；宜居社区景观营造技术等方面内容的研究工作，本课 题研究成果将结合示范试点，进行推广应用,谢谢您的支持。</div>
 		</div>
 	</div>

@@ -13,7 +13,7 @@
 <!-- 
 <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> -->
-<title>宜居乡村社区健康调查平台</title>
+<title>宜居乡村社区环境健康调查平台</title>
 
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -64,7 +64,7 @@
 		<p>您好，欢迎参加问卷调查</p>
 	</div>
 	<div class="breadcrumbs_container">
-		<article class="breadcrumbs"> <a href="#">宜居乡村社区健康调查平台</a>
+		<article class="breadcrumbs"> <a href="#">宜居乡村社区环境健康调查平台</a>
 		<div class="breadcrumb_divider"></div>
 		<a class="current">数据检索</a></article>
 	</div>
@@ -106,7 +106,7 @@
 	<footer>
 	<hr />
 	<p>
-		<strong>Copyright &copy; 2014 宜居乡村社区健康调查平台</strong>
+		<strong>Copyright &copy; 2014宜居乡村社区环境健康调查平台</strong>
 	</p>
 	<p>
 		Design by <a href="#">Alex</a>
@@ -115,7 +115,7 @@
 	<!-- end of sidebar -->
 
 	<section id="main" class="column">
-	<h4 class="alert_info">欢迎使用宜居乡村社区健康调查平台</h4>
+	<h4 class="alert_info">欢迎使用宜居乡村社区环境健康调查平台</h4>
 	<form target="hideWin" action="cwhyh" method="post" enctype="multipart/form-data">
 	<a name="wjdj" />
 	<article class="module width_full"> <header>
