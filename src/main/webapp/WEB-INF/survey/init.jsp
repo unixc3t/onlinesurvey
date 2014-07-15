@@ -517,8 +517,8 @@ function validate_form(thisform) {
 		<input type="submit" value="提交问卷" class="alt_btn">
 	</div>
 	</footer>
-	<div class="clear"></div>
-	<div class="spacer"></div>
+	<div class="clear"/>
+	<div class="spacer"/>
 	</section>
 	</form>
 </body>

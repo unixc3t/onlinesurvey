@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<script src="js/jquery-1.5.2.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 	$(document).ready(function() {

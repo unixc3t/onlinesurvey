@@ -17,6 +17,8 @@ public class Ptyh {
 	@Column
 	private String age;
 	@Column
+	private String surveydate;
+	@Column
 	private String zhiye;
 	@Column
 	private String whcd;
@@ -509,5 +511,13 @@ public class Ptyh {
 
 	public void setJianyi(String jianyi) {
 		this.jianyi = jianyi;
+	}
+
+	public String getSurveydate() {
+		return surveydate;
+	}
+
+	public void setSurveydate(String surveydate) {
+		this.surveydate = surveydate;
 	}
 }
