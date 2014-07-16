@@ -29,4 +29,12 @@ public class SurveyServiceImpl extends NameEntityService<Ptyh> implements
 	public List<Cwhyh> GetAllCwhyh() {
 		return dao().query(Cwhyh.class, null);
 	}
+
+	public void delPtyhById(int userid) {
+		dao().delete(Ptyh.class,userid);
+	}
+
+	public void delCwhyhById(int userid) {
+		dao().delete(Cwhyh.class,userid);
+	}
 }

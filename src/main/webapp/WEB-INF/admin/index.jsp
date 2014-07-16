@@ -121,7 +121,10 @@
     				<td>${ptyh.username}</td> 
     				<td>普通村民</td> 
     				<td>${ptyh.surveydate}</td>
-    				<td><input type="image" src="images/icn_search.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+    				<td>
+    					<a href="selptyh?userid=${ptyh.id}"><img src="images/icn_search.png" border="0"/></a>
+    					<a href="delptyh?userid=${ptyh.id}"><img src="images/icn_trash.png" border="0"/></a>
+    				</td> 
 				</tr>
 			</tbody> 
 			</c:forEach>
@@ -147,7 +150,10 @@
     				<td>${cwhyh.username}</td> 
     				<td>村委会用户</td> 
     				<td>${cwhyh.surveydate}</td>
-    				<td><input type="image" src="images/icn_search.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+    				<td>
+    					<a href="selcwhyh?userid=${cwhyh.id}"><img src="images/icn_search.png" border="0"/></a>
+    					<a href="delcwhyh?userid=${cwhyh.id}"><img src="images/icn_trash.png" border="0"/></a>
+    				</td> 
 				</tr>
 			</tbody>
 			</c:forEach> 

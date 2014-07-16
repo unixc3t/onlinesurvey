@@ -47,6 +47,13 @@ public class SurveyController {
 		request.setAttribute("ifok", "1");
 	}
 	
+	@At("showmsg")
+	@Ok("jsp:admin.index")
+	public void showmsg(HttpServletRequest request) {
+		request.setAttribute("ptyhset", surveyService.GetAllPtyh());
+		request.setAttribute("cwhyhset", surveyService.GetAllCwhyh());
+	}
+	
 	@At("cwhyh")
 	@Ok("jsp:welcome")
 	@AdaptBy(type = UploadAdaptor.class, args = { "ioc:myUpload" })
@@ -68,5 +75,17 @@ public class SurveyController {
 		cwhyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,DateFormat.LONG).format(new Date()));
 		surveyService.InsCwhyh(cwhyh);
 		request.setAttribute("ifok", "1");
+	}
+	
+	@At("delptyh")
+	@Ok("redirect:/showmsg")
+	public void delptyh(int userid) {
+		surveyService.delPtyhById(userid);
+	}
+
+	@At("delcwhyh")
+	@Ok("redirect:/showmsg")
+	public void delcwhyh(int userid) {
+		surveyService.delCwhyhById(userid);
 	}
 }

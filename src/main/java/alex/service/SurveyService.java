@@ -13,4 +13,6 @@ public interface SurveyService {
 	public void InsCwhyh(Cwhyh cwhyh);
 	public List<Ptyh> GetAllPtyh();
 	public List<Cwhyh> GetAllCwhyh();
+	public void delPtyhById(int userid);
+	public void delCwhyhById(int userid);
 }
