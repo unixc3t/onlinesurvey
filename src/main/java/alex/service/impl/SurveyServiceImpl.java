@@ -1,5 +1,7 @@
 package alex.service.impl;
 
+import java.util.List;
+
 import org.nutz.service.NameEntityService;
 
 import alex.pojo.Cwhyh;
@@ -18,5 +20,13 @@ public class SurveyServiceImpl extends NameEntityService<Ptyh> implements
 
 	public void InsCwhyh(Cwhyh cwhyh) {
 		this.dao().insert(cwhyh);
+	}
+
+	public List<Ptyh> GetAllPtyh() {
+		return dao().query(Ptyh.class, null);
+	}
+
+	public List<Cwhyh> GetAllCwhyh() {
+		return dao().query(Cwhyh.class, null);
 	}
 }

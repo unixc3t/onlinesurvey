@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" import="java.util.*" pageEncoding="UTF-8"%>
-
 <%@include file="/common/common.jsp"%>
 
 <!DOCTYPE 
@@ -74,12 +73,11 @@
 	<hr />
 	<h3>基本检索</h3>
 	<ul class="toggle">
-		<li class="icn_tags"><a href="#cwh"> 通过村委会检索 </a></li>
-		<li class="icn_tags"><a href="#ydmj"> 通过用地面积检索 </a></li>
+		<li class="icn_tags"><a href="gptyh" target="main"> 普通用户检索 </a></li>
+		<li class="icn_tags"><a href="gcwyh" target="main"> 村委会检索 </a></li>
 	</ul>
 	<h3>敬请期待</h3>
 	<ul class="toggle">
-		<!-- <li class="icn_photo"><a href="#">环境现状</a></li> -->
 	</ul>
 
 	<footer>
@@ -94,43 +92,13 @@
 	<!-- end of sidebar -->
 
 	<section id="main" class="column">
-	<h4 class="alert_info">欢迎使用宜居乡村社区健康调查平台</h4>
-	<form action="getMsgByCWH" method="post">
-		<article class="module width_full"> <header> <a name="cwh" />
-		<h3>检索类型：村委会</h3>
-		</header>
-		<div class="module_content">
-			<fieldset>
-				<label>输入村委会名称 </label> <input type="text" id="cunweihui" name="cunweihui">
-			</fieldset>
+	<h4 class="alert_info">请选择检索类型</h4>
+		<a name="ptyh"/>
+		<article class="module width_full"> <header> 
+			<iframe id="main" name="main" frameborder="0" src=""></iframe>
 			<div class="clear"></div>
-		</div>
-		<footer>
-		<div class="submit_link">
-			<input type="submit" value="开始检索" class="alt_btn">
-		</div>
-		</footer> </article>
-	</form>
-	<form action="getMsgByYDMJ" method="post">
-		<article class="module width_full"> <header> <a name="ydmj" />
-		<h3>检索类型：用地面积</h3>
-		</header>
-		<div class="module_content">
-			<fieldset style="width: 48%; float: left; margin-right: 3%;">
-				<label> 用地面积下限 </label> <input type="text" style="width: 92%;">
-			</fieldset>
-			<fieldset style="width: 48%; float: right;">
-				<label> 用地面积上限 </label> <input type="text" style="width: 92%;">
-			</fieldset>
-			<div class="clear"></div>
-			<!-- 换行 -->
-		</div>
-		<footer>
-		<div class="submit_link">
-			<input type="submit" value="开始检索" class="alt_btn">
-		</div>
-		</footer> </article>
-	</form>
+
+		</article>
 	<div class="clear"></div>
 	<div class="spacer"></div>
 	</section>
