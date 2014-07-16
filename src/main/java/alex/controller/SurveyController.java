@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -55,10 +56,10 @@ public class SurveyController {
 		if (tf != null || tf2 != null) {
 			String jkpgbgfilename = request.getSession().getServletContext()
 					.getRealPath("/")
-					+ "upload\\" + cwhyh.getUsername() +tf.getMeta().getFileLocalName();
+					+ "upload\\" + UUID.randomUUID() +tf.getMeta().getFileLocalName();
 			String zrzccldcbfilename = request.getSession().getServletContext()
 					.getRealPath("/")
-					+ "upload\\" + cwhyh.getUsername() +tf2.getMeta().getFileLocalName();
+					+ "upload\\" + UUID.randomUUID() +tf2.getMeta().getFileLocalName();
 			File tFile1 = tf.getFile();
 			File tFile2 = tf.getFile();
 			copyFile(tFile1.toString(), jkpgbgfilename);
