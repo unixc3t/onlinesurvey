@@ -16,21 +16,18 @@
 		$(".tablesorter").tablesorter();
 	});
 	$(document).ready(function() {
+		$(".tab_content").hide(); 
+		$("ul.tabs li:first").addClass("active").show(); 
+		$(".tab_content:first").show();
 
-		//When page loads...
-		$(".tab_content").hide(); //Hide all content
-		$("ul.tabs li:first").addClass("active").show(); //Activate first tab
-		$(".tab_content:first").show(); //Show first tab content
-
-		//On Click Event
 		$("ul.tabs li").click(function() {
 
-			$("ul.tabs li").removeClass("active"); //Remove any "active" class
-			$(this).addClass("active"); //Add "active" class to selected tab
-			$(".tab_content").hide(); //Hide all tab content
+			$("ul.tabs li").removeClass("active"); 
+			$(this).addClass("active");
+			$(".tab_content").hide();
 
-			var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
-			$(activeTab).fadeIn(); //Fade in the active ID content
+			var activeTab = $(this).find("a").attr("href");
+			$(activeTab).fadeIn();
 			return false;
 		});
 
@@ -67,10 +64,7 @@
 	</section>
 	<!-- end of secondary bar -->
 
-	<aside id="sidebar" class="column"> <!-- 	<form class="quick_search">
-		<input type="text" value="Quick Search"
-			onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
-	</form> -->
+	<aside id="sidebar" class="column"> 
 	<hr />
 	<h3>一、问卷登记</h3>
 	<ul class="toggle">
@@ -544,6 +538,7 @@
 					<input type="radio" style="margin-left: 2%;" value="5" id="jgxz1_5" name="jgxz1" />环状 
 					<input type="radio" style="margin-left: 2%;" value="6" id="jgxz1_6" name="jgxz1" />放射状
 					<input type="radio" style="margin-left: 2%;" value="7" id="jgxz1_7" name="jgxz1" />其他
+					<input type="text" name="jgxz1_qita" id="jgxz1_qita"/>
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">
@@ -586,6 +581,7 @@
 					<input type="checkbox" style="margin-left: 2%;" value="3" id="jgxz6_3" name="jgxz6" />安全性
 					<input type="checkbox" style="margin-left: 2%;" value="4" id="jgxz6_4" name="jgxz6" />与环境关系适宜性
 					<input type="checkbox" style="margin-left: 2%;" value="5" id="jgxz6_5" name="jgxz6" />其他
+					<input type="text" name="jgxz6_qita" id="jgxz6_qita"/>
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">
@@ -597,6 +593,7 @@
 					<input type="checkbox" style="margin-left: 2%;" value="5" id="jgxz7_5" name="jgxz7" />水体景观
 					<input type="checkbox" style="margin-left: 2%;" value="6" id="jgxz7_6" name="jgxz7" />照明
 					<input type="checkbox" style="margin-left: 2%;" value="7" id="jgxz7_7" name="jgxz7" />其他
+					<input type="text" name="jgxz7_qita" id="jgxz7_qita"/>
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">
@@ -607,6 +604,7 @@
 					<input type="checkbox" style="margin-left: 2%;" value="4" id="jgxz8_4" name="jgxz8" />水体景观环境质量
 					<input type="checkbox" style="margin-left: 2%;" value="5" id="jgxz8_5" name="jgxz8" />照明
 					<input type="checkbox" style="margin-left: 2%;" value="6" id="jgxz8_6" name="jgxz8" />其他
+					<input type="text" name="jgxz8_qita" id="jgxz8_qita"/>
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">

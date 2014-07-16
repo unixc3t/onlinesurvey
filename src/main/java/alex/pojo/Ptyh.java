@@ -63,7 +63,7 @@ public class Ptyh {
 	@Column
 	private String[] hjxz11;
 	@Column
-	private String hjxz12;
+	private String[] hjxz12;
 	@Column
 	private String hjxz13;
 	@Column
@@ -78,10 +78,6 @@ public class Ptyh {
 	private String hjxz16_3;
 	@Column
 	private String hjxz16_4;
-	@Column
-	private String hjxz16_5;
-	@Column
-	private String hjxz16_6;
 	@Column
 	private String hjxz16_7;
 	@Column
@@ -99,7 +95,7 @@ public class Ptyh {
 	@Column
 	private String stzc3;
 	@Column
-	private String stzc4;
+	private String[] stzc4;
 	@Column
 	private String jgxz1;
 	@Column
@@ -112,6 +108,8 @@ public class Ptyh {
 	private String jgxz5;
 	@Column
 	private String jianyi;
+	@Column
+	private String aizheng;
 
 	public Integer getId() {
 		return id;
@@ -313,14 +311,6 @@ public class Ptyh {
 		this.hjxz11 = hjxz11;
 	}
 
-	public String getHjxz12() {
-		return hjxz12;
-	}
-
-	public void setHjxz12(String hjxz12) {
-		this.hjxz12 = hjxz12;
-	}
-
 	public String getHjxz13() {
 		return hjxz13;
 	}
@@ -375,22 +365,6 @@ public class Ptyh {
 
 	public void setHjxz16_4(String hjxz16_4) {
 		this.hjxz16_4 = hjxz16_4;
-	}
-
-	public String getHjxz16_5() {
-		return hjxz16_5;
-	}
-
-	public void setHjxz16_5(String hjxz16_5) {
-		this.hjxz16_5 = hjxz16_5;
-	}
-
-	public String getHjxz16_6() {
-		return hjxz16_6;
-	}
-
-	public void setHjxz16_6(String hjxz16_6) {
-		this.hjxz16_6 = hjxz16_6;
 	}
 
 	public String getHjxz16_7() {
@@ -457,16 +431,32 @@ public class Ptyh {
 		this.stzc3 = stzc3;
 	}
 
-	public String getStzc4() {
+	public String getJgxz1() {
+		return jgxz1;
+	}
+
+	public String[] getHjxz12() {
+		return hjxz12;
+	}
+
+	public void setHjxz12(String[] hjxz12) {
+		this.hjxz12 = hjxz12;
+	}
+
+	public String[] getStzc4() {
 		return stzc4;
 	}
 
-	public void setStzc4(String stzc4) {
+	public void setStzc4(String[] stzc4) {
 		this.stzc4 = stzc4;
 	}
 
-	public String getJgxz1() {
-		return jgxz1;
+	public String getAizheng() {
+		return aizheng;
+	}
+
+	public void setAizheng(String aizheng) {
+		this.aizheng = aizheng;
 	}
 
 	public void setJgxz1(String jgxz1) {

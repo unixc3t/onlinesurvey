@@ -198,11 +198,44 @@ public class Cwhyh {
 	private String jgxz16;
 	@Column
 	private String jgxz17;
+	@Column
+	private String jgxz1_qita;
+	@Column
+	private String jgxz6_qita;
+	@Column
+	private String jgxz7_qita;
+	@Column
+	private String jgxz8_qita;
+
 	public Integer getId() {
 		return id;
 	}
 	public void setId(Integer id) {
 		this.id = id;
+	}
+	public String getJgxz1_qita() {
+		return jgxz1_qita;
+	}
+	public void setJgxz1_qita(String jgxz1_qita) {
+		this.jgxz1_qita = jgxz1_qita;
+	}
+	public String getJgxz6_qita() {
+		return jgxz6_qita;
+	}
+	public void setJgxz6_qita(String jgxz6_qita) {
+		this.jgxz6_qita = jgxz6_qita;
+	}
+	public String getJgxz7_qita() {
+		return jgxz7_qita;
+	}
+	public void setJgxz7_qita(String jgxz7_qita) {
+		this.jgxz7_qita = jgxz7_qita;
+	}
+	public String getJgxz8_qita() {
+		return jgxz8_qita;
+	}
+	public void setJgxz8_qita(String jgxz8_qita) {
+		this.jgxz8_qita = jgxz8_qita;
 	}
 	public String getUsername() {
 		return username;

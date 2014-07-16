@@ -167,7 +167,13 @@ function validate_form(thisform) {
 				<fieldset style="width: 15%; float: left; margin-right: 1%;">
 					<label>庭院面积</label> <input type="text" name="tymj" id="tymj" style="width: 85%;" />
 				</fieldset>
-
+				<fieldset style="width: 15%; float: left; margin-right: 1%;">
+					<label>厕所是否在室内</label>
+						<select name="cesuoqk" style="width: 85%;">
+						<option value="1">是</option>
+						<option value="2">否</option>
+						</select>
+				</fieldset>
 				<div class="clear"></div>
 
 				<fieldset style="width: 40%; float: left; margin-left: 2%; margin-right: 1%;">
@@ -221,13 +227,15 @@ function validate_form(thisform) {
 					  <input type="checkbox" style="margin-left: 2%;" value="6" id="hjxz3_6" name="hjxz3" />其他
 				</fieldset>
 				<div class="clear" />
-				<fieldset style="width: 48.5%; float: left;">
-					<legend>4.您认为您居住地的环境质量状况近年来的变化趋势怎样？</legend>
-					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz4_1" name="hjxz4" />有明显改善
-					<input type="radio" style="margin-left: 2%;" value="2" id="hjxz4_2" name="hjxz4" />有明显恶化
-					<input type="radio" style="margin-left: 2%;" value="3" id="hjxz4_3" name="hjxz4" />没变化
+				<fieldset style="width: 99%; float: left;">
+					<legend>4.您家产生的生活污水（洗菜水、洗衣服水或冲厕水）排向哪里？</legend>
+					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz4_1" name="hjxz4" />直接排入附近的沟渠
+					<input type="radio" style="margin-left: 2%;" value="2" id="hjxz4_2" name="hjxz4" />排入管网后未经处理统一排入沟渠
+					<input type="radio" style="margin-left: 2%;" value="3" id="hjxz4_3" name="hjxz4" />排入管网统一处理后排放
+					<input type="radio" style="margin-left: 2%;" value="4" id="hjxz4_4" name="hjxz4" />其他
 				</fieldset>
-				<fieldset style="width: 48.5%; float: left; margin-left: 1.5%;">
+				<div class="clear" />
+				<fieldset style="width: 99%; float: left;">
 					<legend>5.您认为您居住地的空气质量存在哪些问题？[可多选]</legend>
 					<input type="checkbox" style="margin-left: 2%;" value="1" id="hjxz5_1" name="hjxz5" />有异味
 					 <input type="checkbox" style="margin-left: 2%;" value="2" id="hjxz5_2" name="hjxz5" />粉尘大
@@ -242,10 +250,13 @@ function validate_form(thisform) {
 					 <input type="radio" style="margin-left: 2%;" value="3" id="hjxz6_3" name="hjxz6" />生态环境被破坏 
 					 <input type="radio" style="margin-left: 2%;" value="4" id="hjxz6_4" name="hjxz6" />其他
 				</fieldset>
-				<fieldset style="width: 48.5%; float: left; margin-left: 1.5%;">
+				<fieldset style="width: 30%; float: left; margin-left: 1.5%;">
 					<legend>7.近5年家中是否有癌症等恶性肿瘤病人？</legend>
 					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz7_1" name="hjxz7" />有 
 					<input type="radio" style="margin-left: 2%;" value="2" id="hjxz7_2" name="hjxz7" />没有
+				</fieldset>
+				<fieldset style="width: 15%; float: left; margin-left: 2%; margin-right: 1%;">
+					<legend>若有癌症，有几人</legend> <input type="text" name="aizheng" id="aizheng" style="width: 85%;" />
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 48.5%; float: left;">
@@ -272,7 +283,7 @@ function validate_form(thisform) {
 				<fieldset style="width: 48.5%; float: left; margin-left: 1.5%;">
 					<legend>10.当地是否发生过水污染事件？</legend>
 					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz10_1" name="hjxz10" />发生过
-					 <input type="checkbox" style="margin-left: 2%;" value="2" id="hjxz10_2" name="hjxz10" />没发生过
+					 <input type="radio" style="margin-left: 2%;" value="2" id="hjxz10_2" name="hjxz10" />没发生过
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">
@@ -290,12 +301,12 @@ function validate_form(thisform) {
 				<div class="clear" />
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">
 					<legend>12.您认为当地的医疗情况有哪些需要改进？</legend>
-					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz12_1" name="hjxz12" />增加药品种类
-					<input type="radio" style="margin-left: 2%;" value="2" id="hjxz12_2" name="hjxz12" />改善扩建卫生房屋 
-					<input type="radio" style="margin-left: 2%;" value="3" id="hjxz12_3" name="hjxz12" />改善服务态度
-					<input type="radio" style="margin-left: 2%;" value="4" id="hjxz12_4" name="hjxz12" />提高医生技术水平 
-					<input type="radio" style="margin-left: 2%;" value="5" id="hjxz12_5" name="hjxz12" />更新医疗设备
-					<input type="radio" style="margin-left: 2%;" value="6" id="hjxz12_6" name="hjxz12" />其他
+					<input type="checkbox" style="margin-left: 2%;" value="1" id="hjxz12_1" name="hjxz12" />增加药品种类
+					<input type="checkbox" style="margin-left: 2%;" value="2" id="hjxz12_2" name="hjxz12" />改善扩建卫生房屋 
+					<input type="checkbox" style="margin-left: 2%;" value="3" id="hjxz12_3" name="hjxz12" />改善服务态度
+					<input type="checkbox" style="margin-left: 2%;" value="4" id="hjxz12_4" name="hjxz12" />提高医生技术水平 
+					<input type="checkbox" style="margin-left: 2%;" value="5" id="hjxz12_5" name="hjxz12" />更新医疗设备
+					<input type="checkbox" style="margin-left: 2%;" value="6" id="hjxz12_6" name="hjxz12" />其他
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 48.5%; float: left;">
@@ -360,28 +371,13 @@ function validate_form(thisform) {
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 48.5%; float: left;">
-					<legend>16.5 您如何处理硬塑料（包装盒、瓶、桶等）？</legend>
-					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz16_5_1" name="hjxz16_5" />随地扔掉 
-					<input type="radio" style="margin-left: 2%;" value="2" id="hjxz16_5_2" name="hjxz16_5" />回收使用
-					 <input type="radio" style="margin-left: 2%;" value="3" id="hjxz16_5_3" name="hjxz16_5" />卖给回收站
-					  <input type="radio" style="margin-left: 2%;" value="4" id="hjxz16_5_4" name="hjxz16_5" />扔到垃圾站
-				</fieldset>
-				<fieldset style="width: 48.5%; float: left; margin-left: 1.5%;">
-					<legend>16.6 您如何处理软塑料（废薄膜、包装袋等）？</legend>
-					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz16_6_1" name="hjxz16_6" />随地扔掉 
-					<input type="radio" style="margin-left: 2%;" value="2" id="hjxz16_6_2" name="hjxz16_6" />卖给回收站 
-					<input type="radio" style="margin-left: 2%;" value="3" id="hjxz16_6_3" name="hjxz16_6" />扔到垃圾站 
-					<input type="radio" style="margin-left: 2%;" value="4" id="hjxz16_6_4" name="hjxz16_6" />焚烧
-				</fieldset>
-				<div class="clear" />
-				<fieldset style="width: 48.5%; float: left;">
-					<legend>16.7 您如何处理废电池？</legend>
+					<legend>16.5 您如何处理废电池？</legend>
 					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz16_7_1" name="hjxz16_7" />随地扔掉
 					 <input type="radio" style="margin-left: 2%;" value="2" id="hjxz16_7_2" name="hjxz16_7" />卖给回收站
 					  <input type="radio" style="margin-left: 2%;" value="3" id="hjxz16_7_3" name="hjxz16_7" />扔到垃圾站
 				</fieldset>
 				<fieldset style="width: 48.5%; float: left; margin-left: 1.5%;">
-					<legend>16.8 您如何处理畜禽粪便？</legend>
+					<legend>16.6 您如何处理畜禽粪便？</legend>
 					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz16_8_1" name="hjxz16_8" />随地扔掉
 					 <input type="radio" style="margin-left: 2%;" value="2" id="hjxz16_8_2" name="hjxz16_8" />直接还田 
 					 <input type="radio" style="margin-left: 2%;" value="3" id="hjxz16_8_3" name="hjxz16_8" />扔到垃圾站 
@@ -390,14 +386,14 @@ function validate_form(thisform) {
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 48.5%; float: left;">
-					<legend>16.9 您如何处理厕所粪便？</legend>
+					<legend>16.7 您如何处理厕所粪便？</legend>
 					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz16_9_1" name="hjxz16_9" />还田
 					 <input type="radio" style="margin-left: 2%;" value="2" id="hjxz16_9_2" name="hjxz16_9" />卖给回收站 
 					 <input type="radio" style="margin-left: 2%;" value="3" id="hjxz16_9_3" name="hjxz16_9" />冲入化粪池
 					  <input type="radio" style="margin-left: 2%;" value="4" id="hjxz16_9_4" name="hjxz16_9" />产沼气
 				</fieldset>
 				<fieldset style="width: 48.5%; float: left; margin-left: 1.5%;">
-					<legend>16.10 您如何处理易拉罐？</legend>
+					<legend>16.8 您如何处理易拉罐？</legend>
 					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz16_10_1" name="hjxz16_10" />随地扔掉
 					 <input type="radio" style="margin-left: 2%;" value="2" id="hjxz16_10_2" name="hjxz16_10" />回收使用 
 					 <input type="radio" style="margin-left: 2%;" value="3" id="hjxz16_10_3" name="hjxz16_10" />卖给回收站 
@@ -405,7 +401,7 @@ function validate_form(thisform) {
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 48.5%; float: left;">
-					<legend>16.11 您如何处理生活污水？</legend>
+					<legend>16.9 您如何处理生活污水？</legend>
 					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz16_11_1" name="hjxz16_11" />直接排放 
 					<input type="radio" style="margin-left: 2%;" value="2" id="hjxz16_11_2" name="hjxz16_11" />经化粪池排放 
 					<input type="radio" style="margin-left: 2%;" value="3" id="hjxz16_11_3" name="hjxz16_11" />入污水处理站 
@@ -442,11 +438,11 @@ function validate_form(thisform) {
 				</fieldset>
 				<fieldset style="width: 48.5%; float: left; margin-left: 1.5%;">
 					<legend>4.您家庭院内绿化主要方式</legend>
-					<input type="radio" style="margin-left: 2%;" value="1" id="stzc4_1" name="stzc4" />种菜 
-					<input type="radio" style="margin-left: 2%;" value="2" id="stzc4_2" name="stzc4" />种果树 
-					<input type="radio" style="margin-left: 2%;" value="3" id="stzc4_3" name="stzc4" />非经济树种
-					<input type="radio" style="margin-left: 2%;" value="4" id="stzc4_4" name="stzc4" />种观赏花 
-					<input type="radio" style="margin-left: 2%;" value="5" id="stzc4_5" name="stzc4" />其他
+					<input type="checkbox" style="margin-left: 2%;" value="1" id="stzc4_1" name="stzc4" />种菜 
+					<input type="checkbox" style="margin-left: 2%;" value="2" id="stzc4_2" name="stzc4" />种果树 
+					<input type="checkbox" style="margin-left: 2%;" value="3" id="stzc4_3" name="stzc4" />非经济树种
+					<input type="checkbox" style="margin-left: 2%;" value="4" id="stzc4_4" name="stzc4" />种观赏花 
+					<input type="checkbox" style="margin-left: 2%;" value="5" id="stzc4_5" name="stzc4" />其他
 				</fieldset>
 				<div class="clear" />
 			</div>
