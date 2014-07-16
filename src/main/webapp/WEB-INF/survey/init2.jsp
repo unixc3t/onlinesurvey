@@ -112,7 +112,7 @@
 
 	<section id="main" class="column">
 	<h4 class="alert_info">欢迎使用宜居乡村社区健康调查平台</h4>
-	<form target="hideWin" action="cwhyh" method="post" enctype="multipart/form-data">
+	<form action="cwhyh" method="post" enctype="multipart/form-data">
 	<a name="wjdj" />
 	<article class="module width_full"> <header>
 	<h3>问卷登记</h3>

@@ -38,6 +38,9 @@ var ioc = {
 		fields : {
 			accountService : {
 				refer : 'accountService'
+			},
+			surveyService : {
+				refer : 'surveyService'
 			}
 		}
 	},

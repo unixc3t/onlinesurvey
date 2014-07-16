@@ -15,6 +15,8 @@ public class Cwhyh {
 	@Column
 	private String username;
 	@Column
+	private String surveydate;
+	@Column
 	private String sheng;
 	@Column
 	private String shi;
@@ -753,5 +755,11 @@ public class Cwhyh {
 	}
 	public void setJgxz17(String jgxz17) {
 		this.jgxz17 = jgxz17;
+	}
+	public String getSurveydate() {
+		return surveydate;
+	}
+	public void setSurveydate(String surveydate) {
+		this.surveydate = surveydate;
 	}
 }

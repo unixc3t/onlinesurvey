@@ -1,9 +1,6 @@
 package alex.controller;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStream;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.UUID;
@@ -68,19 +65,8 @@ public class SurveyController {
 			cwhyh.setJkpgbg(uuid1);
 			cwhyh.setZrzccldcb(uuid2);
 		}
+		cwhyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,DateFormat.LONG).format(new Date()));
 		surveyService.InsCwhyh(cwhyh);
 		request.setAttribute("ifok", "1");
-	}
-	
-	@At("gptyh")
-	@Ok("jsp:list.ptyh")
-	public void gptyh(HttpServletRequest request) {
-		request.setAttribute("ptyhset", surveyService.GetAllPtyh());
-	}
-	
-	@At("gcwhyh")
-	@Ok("jsp:list.cwhyh")
-	public void gcwhyh(HttpServletRequest request) {
-		request.setAttribute("cwhyhset", surveyService.GetAllCwhyh());
 	}
 }

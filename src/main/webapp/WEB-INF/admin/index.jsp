@@ -1,3 +1,6 @@
+<%@page import="alex.pojo.Ptyh"%>
+<%@page import="alex.pojo.Cwhyh"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" import="java.util.*" pageEncoding="UTF-8"%>
 <%@include file="/common/common.jsp"%>
 
@@ -73,8 +76,8 @@
 	<hr />
 	<h3>基本检索</h3>
 	<ul class="toggle">
-		<li class="icn_tags"><a href="gptyh" target="main"> 普通用户检索 </a></li>
-		<li class="icn_tags"><a href="gcwyh" target="main"> 村委会检索 </a></li>
+		<li class="icn_tags"><a href="#"> 普通用户检索 </a></li>
+		<li class="icn_tags"><a href="#"> 村委会检索 </a></li>
 	</ul>
 	<h3>敬请期待</h3>
 	<ul class="toggle">
@@ -89,16 +92,72 @@
 		Design by <a href="#"> Alex </a>
 	</p>
 	</footer> </aside>
-	<!-- end of sidebar -->
 
 	<section id="main" class="column">
-	<h4 class="alert_info">请选择检索类型</h4>
-		<a name="ptyh"/>
-		<article class="module width_full"> <header> 
-			<iframe id="main" name="main" frameborder="0" src=""></iframe>
-			<div class="clear"></div>
+		<article class="module width_full" >
+		<header><h3 class="tabs_involved">数据检索</h3>
+		<ul class="tabs">
+   			<li><a href="#tab1">普通村民用户</a></li>
+    		<li><a href="#tab2">村委会用户</a></li>
+		</ul>
+		</header>
 
-		</article>
+		<div class="tab_container">
+			<div id="tab1" class="tab_content">
+			<table class="tablesorter" cellspacing="0"> 
+			<thead> 
+				<tr>
+					<th>问卷编号</th> 
+    				<th>调查人姓名</th> 
+    				<th>调查人身份</th> 
+    				<th>问卷提交时间</th> 
+    				<th>问卷操作</th> 
+				</tr> 
+			</thead> 
+			<c:forEach items="${ptyhset}" var="ptyh">
+			<tbody>
+				<tr>
+					<td>${ptyh.id}</td> 
+    				<td>${ptyh.username}</td> 
+    				<td>普通村民</td> 
+    				<td>${ptyh.surveydate}</td>
+    				<td><input type="image" src="images/icn_search.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+				</tr>
+			</tbody> 
+			</c:forEach>
+			</table>
+			</div><!-- end of #tab1 -->
+			
+			<div id="tab2" class="tab_content">
+			<table class="tablesorter" cellspacing="0"> 
+			
+			<thead> 
+				<tr>
+					<th>问卷编号</th> 
+    				<th>调查人姓名</th> 
+    				<th>调查人身份</th> 
+    				<th>问卷提交时间</th> 
+    				<th>问卷操作</th> 
+				</tr> 
+			</thead> 
+			<c:forEach items="${cwhyhset}" var="cwhyh">
+			<tbody> 
+				<tr>
+					<td>${cwhyh.id}</td> 
+    				<td>${cwhyh.username}</td> 
+    				<td>村委会用户</td> 
+    				<td>${cwhyh.surveydate}</td>
+    				<td><input type="image" src="images/icn_search.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+				</tr>
+			</tbody>
+			</c:forEach> 
+			</table>
+
+			</div><!-- end of #tab2 -->
+			
+		</div><!-- end of .tab_container -->
+		
+		</article><!-- end of content manager article -->
 	<div class="clear"></div>
 	<div class="spacer"></div>
 	</section>
