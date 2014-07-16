@@ -8,7 +8,7 @@ import org.nutz.ioc.Ioc;
 import org.nutz.ioc.impl.NutIoc;
 import org.nutz.ioc.loader.json.JsonLoader;
 
-import alex.pojo.Ptyh;
+import alex.pojo.Cwhyh;
 
 /**
  * @author	Liuzhilong<alexmaven@icloud.com>
@@ -21,7 +21,7 @@ public class createdb {
 		Ioc ioc = new NutIoc(new JsonLoader("nutz.js"));
 		DataSource ds = ioc.get(DataSource.class);
 		Dao dao = new NutDao(ds);
-		dao.create(Ptyh.class, false);
+		dao.create(Cwhyh.class, false);
 	}
 
 }

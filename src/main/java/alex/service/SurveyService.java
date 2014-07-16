@@ -1,5 +1,6 @@
 package alex.service;
 
+import alex.pojo.Cwhyh;
 import alex.pojo.Ptyh;
 
 /**
@@ -7,4 +8,5 @@ import alex.pojo.Ptyh;
  */
 public interface SurveyService {
 	public void InsPtyh(Ptyh ptyh);
+	public void InsCwhyh(Cwhyh cwhyh);
 }

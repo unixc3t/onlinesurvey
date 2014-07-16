@@ -14,6 +14,7 @@ import org.nutz.mvc.annotation.AdaptBy;
 import org.nutz.mvc.annotation.At;
 import org.nutz.mvc.annotation.Ok;
 import org.nutz.mvc.annotation.Param;
+import org.nutz.mvc.upload.TempFile;
 import org.nutz.mvc.upload.UploadAdaptor;
 
 import alex.pojo.Cwhyh;
@@ -49,10 +50,23 @@ public class SurveyController {
 	@At("cwhyh")
 	@Ok("jsp:welcome")
 	@AdaptBy(type = UploadAdaptor.class, args = { "ioc:myUpload" })
-	public void ptyh(@Param(value = "..") Cwhyh cwhyh,HttpServletRequest request) {
-
-		
-		
+	public void ptyh(@Param(value = "..") Cwhyh cwhyh,HttpServletRequest request,
+			@Param("jkpgbg") TempFile tf,@Param("zrzccldcb") TempFile tf2) {
+		if (tf != null || tf2 != null) {
+			String jkpgbgfilename = request.getSession().getServletContext()
+					.getRealPath("/")
+					+ "upload\\" + cwhyh.getUsername() +tf.getMeta().getFileLocalName();
+			String zrzccldcbfilename = request.getSession().getServletContext()
+					.getRealPath("/")
+					+ "upload\\" + cwhyh.getUsername() +tf2.getMeta().getFileLocalName();
+			File tFile1 = tf.getFile();
+			File tFile2 = tf.getFile();
+			copyFile(tFile1.toString(), jkpgbgfilename);
+			copyFile(tFile2.toString(), zrzccldcbfilename);
+			cwhyh.setJkpgbg(jkpgbgfilename);
+			cwhyh.setZrzccldcb(zrzccldcbfilename);
+		}
+		surveyService.InsCwhyh(cwhyh);
 		request.setAttribute("ifok", "1");
 	}
 	
