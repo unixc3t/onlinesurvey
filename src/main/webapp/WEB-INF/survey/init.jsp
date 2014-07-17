@@ -202,7 +202,7 @@ function validate_form(thisform) {
 			<h3>环境现状</h3>
 			</header>
 			<div class="module_content">
-				<fieldset style="width: 48.5%; float: left;">
+				<fieldset style="width: 99%; float: left;">
 					<legend>1.您认为当前农村哪些环境问题对你的生活影响最大？</legend>
 					<input type="checkbox" style="margin-left: 2%;" value="1" id="hjxz1_1" name="hjxz1" />水污染
 					 <input type="checkbox" style="margin-left: 2%;" value="2 " id="hjxz1_2" name="hjxz1" />大气污染 
@@ -213,7 +213,8 @@ function validate_form(thisform) {
 					 <input type="checkbox" style="margin-left: 2%;" value="3" id="hjxz1_7" name="hjxz1" />化肥、农药及地膜
 					 <input type="checkbox" style="margin-left: 2%;" value="4" id="hjxz1_8" name="hjxz1" />其它
 				</fieldset>
-				<fieldset style="width: 48.5%; float: left; margin-left: 1.5%;">
+				<div class="clear" />
+				<fieldset style="width: 99%; float: left; margin-left: 1.5%;">
 					<legend>2.您认为您居住地的环境质量状况近年来的变化趋势怎样？</legend>
 					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz2_1" name="hjxz2" />有明显改善 
 					<input type="radio" style="margin-left: 2%;" value="2" id="hjxz2_2" name="hjxz2" />有明显恶化 
