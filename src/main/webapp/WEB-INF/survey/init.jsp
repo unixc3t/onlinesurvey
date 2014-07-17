@@ -458,21 +458,21 @@ function validate_form(thisform) {
 			<div class="module_content">
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">
 					<legend>1.您认为您所处的街坊、庭院存在以下哪些不足之处？</legend>
-					<input type="radio" style="margin-left: 2%;" value="1" id="jgxz1_1" name="jgxz1" />垃圾乱堆、乱放 
-					<input type="radio" style="margin-left: 2%;" value="2" id="jgxz1_2" name="jgxz1" />乱搭、乱建违章建筑
-					<input type="radio" style="margin-left: 2%;" value="3" id="jgxz1_3" name="jgxz1" />地面铺装单调或损坏
-					<input type="radio" style="margin-left: 2%;" value="4" id="jgxz1_4" name="jgxz1" />车辆乱停、乱放
-					<input type="radio" style="margin-left: 2%;" value="5" id="jgxz1_5" name="jgxz1" />缺乏健身设施和凉亭等休闲设施 
-					<input type="radio" style="margin-left: 2%;" value="6" id="jgxz1_6" name="jgxz1" />其他情况
+					<input type="checkbox" style="margin-left: 2%;" value="1" id="jgxz1_1" name="jgxz1" />垃圾乱堆、乱放 
+					<input type="checkbox" style="margin-left: 2%;" value="2" id="jgxz1_2" name="jgxz1" />乱搭、乱建违章建筑
+					<input type="checkbox" style="margin-left: 2%;" value="3" id="jgxz1_3" name="jgxz1" />地面铺装单调或损坏
+					<input type="checkbox" style="margin-left: 2%;" value="4" id="jgxz1_4" name="jgxz1" />车辆乱停、乱放
+					<input type="checkbox" style="margin-left: 2%;" value="5" id="jgxz1_5" name="jgxz1" />缺乏健身设施和凉亭等休闲设施 
+					<input type="checkbox" style="margin-left: 2%;" value="6" id="jgxz1_6" name="jgxz1" />其他情况
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">
 					<legend>2.您认为社区主要道路两侧的景观还存在什么问题？</legend>
-					<input type="radio" style="margin-left: 2%;" value="1" id="jgxz2_1" name="jgxz2" />垃圾桶数量不足，杂物、垃圾乱堆放
-					<input type="radio" style="margin-left: 2%;" value="2" id="jgxz2_2" name="jgxz2" />行道树数量不足、两侧绿化量低 
-					<input type="radio" style="margin-left: 2%;" value="3" id="jgxz2_3" name="jgxz2" />道路两侧建筑风格不协调，外观效果差
-					<input type="radio" style="margin-left: 2%;" value="4" id="jgxz2_4" name="jgxz2" />道路过宽或过窄，缺乏生活气息
-					<input type="radio" style="margin-left: 2%;" value="5" id="jgxz2_5" name="jgxz2" />其他情况
+					<input type="checkbox" style="margin-left: 2%;" value="1" id="jgxz2_1" name="jgxz2" />垃圾桶数量不足，杂物、垃圾乱堆放
+					<input type="checkbox" style="margin-left: 2%;" value="2" id="jgxz2_2" name="jgxz2" />行道树数量不足、两侧绿化量低 
+					<input type="checkbox" style="margin-left: 2%;" value="3" id="jgxz2_3" name="jgxz2" />道路两侧建筑风格不协调，外观效果差
+					<input type="checkbox" style="margin-left: 2%;" value="4" id="jgxz2_4" name="jgxz2" />道路过宽或过窄，缺乏生活气息
+					<input type="checkbox" style="margin-left: 2%;" value="5" id="jgxz2_5" name="jgxz2" />其他情况
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">
@@ -485,11 +485,11 @@ function validate_form(thisform) {
 				<div class="clear" />
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">
 					<legend>4.您认为您最常去的公园（或广场）存在哪些不足之处？</legend>
-					<input type="radio" style="margin-left: 2%;" value="1" id="jgxz4_1" name="jgxz4" />夜晚灯光太暗，在公园感觉不安全
-					<input type="radio" style="margin-left: 2%;" value="2" id="jgxz4_2" name="jgxz4" />公园景观设施老化、破损
-					<input type="radio" style="margin-left: 2%;" value="3" id="jgxz4_3" name="jgxz4" />配套设施不足，如厕所、健身设施、休息桌椅
-					<input type="radio" style="margin-left: 2%;" value="4" id="jgxz4_4" name="jgxz4" />树木数量有限，整体绿化环境不好
-					<input type="radio" style="margin-left: 2%;" value="5" id="jgxz4_5" name="jgxz4" />其他情况
+					<input type="checkbox" style="margin-left: 2%;" value="1" id="jgxz4_1" name="jgxz4" />夜晚灯光太暗，在公园感觉不安全
+					<input type="checkbox" style="margin-left: 2%;" value="2" id="jgxz4_2" name="jgxz4" />公园景观设施老化、破损
+					<input type="checkbox" style="margin-left: 2%;" value="3" id="jgxz4_3" name="jgxz4" />配套设施不足，如厕所、健身设施、休息桌椅
+					<input type="checkbox" style="margin-left: 2%;" value="4" id="jgxz4_4" name="jgxz4" />树木数量有限，整体绿化环境不好
+					<input type="checkbox" style="margin-left: 2%;" value="5" id="jgxz4_5" name="jgxz4" />其他情况
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">

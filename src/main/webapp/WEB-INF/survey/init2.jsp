@@ -553,8 +553,8 @@
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">
 					<legend>3.作为管理者您认为本村居民的庭院目前急需解决的问题是？</legend>
 					<input type="radio" style="margin-left: 2%;" value="1" id="jgxz3_1" name="jgxz3" />环境卫生
-					 <input type="radio" style="margin-left: 2%;" value="2" id="jgxz3_2" name="jgxz3" />绿化种植
-					  <input type="radio" style="margin-left: 2%;" value="3" id="jgxz3_3" name="jgxz3" />基础设施（垃圾转运、排水设施等）
+					<input type="radio" style="margin-left: 2%;" value="2" id="jgxz3_2" name="jgxz3" />绿化种植
+					<input type="radio" style="margin-left: 2%;" value="3" id="jgxz3_3" name="jgxz3" />基础设施（垃圾转运、排水设施等）
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">

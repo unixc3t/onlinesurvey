@@ -97,13 +97,13 @@ public class Ptyh {
 	@Column
 	private String[] stzc4;
 	@Column
-	private String jgxz1;
+	private String[] jgxz1;
 	@Column
-	private String jgxz2;
+	private String[] jgxz2;
 	@Column
 	private String jgxz3;
 	@Column
-	private String jgxz4;
+	private String[] jgxz4;
 	@Column
 	private String jgxz5;
 	@Column
@@ -431,7 +431,7 @@ public class Ptyh {
 		this.stzc3 = stzc3;
 	}
 
-	public String getJgxz1() {
+	public String[] getJgxz1() {
 		return jgxz1;
 	}
 
@@ -459,15 +459,15 @@ public class Ptyh {
 		this.aizheng = aizheng;
 	}
 
-	public void setJgxz1(String jgxz1) {
+	public void setJgxz1(String[] jgxz1) {
 		this.jgxz1 = jgxz1;
 	}
 
-	public String getJgxz2() {
+	public String[] getJgxz2() {
 		return jgxz2;
 	}
 
-	public void setJgxz2(String jgxz2) {
+	public void setJgxz2(String[] jgxz2) {
 		this.jgxz2 = jgxz2;
 	}
 
@@ -479,11 +479,11 @@ public class Ptyh {
 		this.jgxz3 = jgxz3;
 	}
 
-	public String getJgxz4() {
+	public String[] getJgxz4() {
 		return jgxz4;
 	}
 
-	public void setJgxz4(String jgxz4) {
+	public void setJgxz4(String[] jgxz4) {
 		this.jgxz4 = jgxz4;
 	}
 
