@@ -20,6 +20,7 @@ import alex.service.AccountService;
 public class AcountController {
 	private AccountService accountService;
 	
+	//登陆
 	@At("login")
 	public View useLogin(@Param(value = "..") User user,
 			HttpServletRequest request) {
@@ -31,6 +32,7 @@ public class AcountController {
 		}
 	}
 
+	//登出
 	@At("logout")
 	@Ok("redirect:/")
 	public void logout(HttpServletRequest request) {

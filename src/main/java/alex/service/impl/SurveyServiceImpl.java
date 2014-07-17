@@ -37,4 +37,12 @@ public class SurveyServiceImpl extends NameEntityService<Ptyh> implements
 	public void delCwhyhById(int userid) {
 		dao().delete(Cwhyh.class,userid);
 	}
+
+	public Ptyh getPtyhById(int userid) {
+		return dao().fetch(Ptyh.class, userid);
+	}
+
+	public Cwhyh getCwhyhById(int userid) {
+		return dao().fetch(Cwhyh.class, userid);
+	}
 }
