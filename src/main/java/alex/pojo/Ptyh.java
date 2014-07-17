@@ -39,7 +39,7 @@ public class Ptyh {
 	@Column
 	private String[] syhzrl;
 	@Column
-	private String hjxz1;
+	private String[] hjxz1;
 	@Column
 	private String hjxz2;
 	@Column
@@ -215,11 +215,11 @@ public class Ptyh {
 		this.syhzrl = syhzrl;
 	}
 
-	public String getHjxz1() {
+	public String[] getHjxz1() {
 		return hjxz1;
 	}
 
-	public void setHjxz1(String hjxz1) {
+	public void setHjxz1(String[] hjxz1) {
 		this.hjxz1 = hjxz1;
 	}
 

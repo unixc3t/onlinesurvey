@@ -204,11 +204,14 @@ function validate_form(thisform) {
 			<div class="module_content">
 				<fieldset style="width: 48.5%; float: left;">
 					<legend>1.您认为当前农村哪些环境问题对你的生活影响最大？</legend>
-					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz1_1" name="hjxz1" />水污染
-					 <input type="radio" style="margin-left: 2%;" value="2 " id="hjxz1_2" name="hjxz1" />大气污染 
-					 <input type="radio" style="margin-left: 2%;" value="3" id="hjxz1_3" name="hjxz1" />生活垃圾污染 
-					 <input type="radio" style="margin-left: 2%;" value="4" id="hjxz1_4" name="hjxz1" />噪声污染
-					  <input type="radio" style="margin-left: 2%;" value="5" id="hjxz1_5" name="hjxz1" />畜禽粪便
+					<input type="checkbox" style="margin-left: 2%;" value="1" id="hjxz1_1" name="hjxz1" />水污染
+					 <input type="checkbox" style="margin-left: 2%;" value="2 " id="hjxz1_2" name="hjxz1" />大气污染 
+					 <input type="checkbox" style="margin-left: 2%;" value="3" id="hjxz1_3" name="hjxz1" />生活垃圾污染 
+					 <input type="checkbox" style="margin-left: 2%;" value="4" id="hjxz1_4" name="hjxz1" />噪声污染
+					  <input type="checkbox" style="margin-left: 2%;" value="5" id="hjxz1_5" name="hjxz1" />畜禽粪便
+					   <input type="checkbox" style="margin-left: 2%;" value="2 " id="hjxz1_6" name="hjxz1" />秸秆焚烧 
+					 <input type="checkbox" style="margin-left: 2%;" value="3" id="hjxz1_7" name="hjxz1" />化肥、农药及地膜
+					 <input type="checkbox" style="margin-left: 2%;" value="4" id="hjxz1_8" name="hjxz1" />其它
 				</fieldset>
 				<fieldset style="width: 48.5%; float: left; margin-left: 1.5%;">
 					<legend>2.您认为您居住地的环境质量状况近年来的变化趋势怎样？</legend>
