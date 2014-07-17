@@ -214,7 +214,7 @@ function validate_form(thisform) {
 					 <input type="checkbox" style="margin-left: 2%;" value="4" id="hjxz1_8" name="hjxz1" />其它
 				</fieldset>
 				<div class="clear" />
-				<fieldset style="width: 99%; float: left; margin-left: 1.5%;">
+				<fieldset style="width: 99%; float: left;">
 					<legend>2.您认为您居住地的环境质量状况近年来的变化趋势怎样？</legend>
 					<input type="radio" style="margin-left: 2%;" value="1" id="hjxz2_1" name="hjxz2" />有明显改善 
 					<input type="radio" style="margin-left: 2%;" value="2" id="hjxz2_2" name="hjxz2" />有明显恶化 
