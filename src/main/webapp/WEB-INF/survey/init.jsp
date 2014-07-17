@@ -498,6 +498,7 @@ function validate_form(thisform) {
 					<input type="radio" style="margin-left: 2%;" value="2" id="jgxz5_2" name="jgxz5" />道路街巷景观
 					<input type="radio" style="margin-left: 2%;" value="3" id="jgxz5_3" name="jgxz5" />广场公园景观
 					<input type="radio" style="margin-left: 2%;" value="4" id="jgxz5_4" name="jgxz5" />河流水系景观
+					<input type="radio" style="margin-left: 2%;" value="5" id="jgxz5_5" name="jgxz5" />非物质景观（如社区文化、生活气息等）
 				</fieldset>
 				<div class="clear" />
 				<fieldset style="width: 99%; float: left; margin-right: 1%;">
