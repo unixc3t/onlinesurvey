@@ -83,7 +83,7 @@ public class Cwhyh {
 	@Column
 	private String nlgc5;
 	@Column
-	private String[] ggfwss;
+	private String ggfwss;
 	@Column
 	private String yhdl;
 	@Column
@@ -127,7 +127,7 @@ public class Cwhyh {
 	@Column
 	private String sfzhyjjz;
 	@Column
-	private String[] zyzlzywt;
+	private String zyzlzywt;
 	@Column
 	private String jkpgbg;
 	@Column
@@ -173,15 +173,15 @@ public class Cwhyh {
 	@Column
 	private String jgxz5;
 	@Column
-	private String[] jgxz6;
+	private String jgxz6;
 	@Column
-	private String[] jgxz7;
+	private String jgxz7;
 	@Column
-	private String[] jgxz8;
+	private String jgxz8;
 	@Column
 	private String jgxz9;
 	@Column
-	private String[] jgxz10;
+	private String jgxz10;
 	@Column
 	private String jgxz11;
 	@Column
@@ -193,7 +193,7 @@ public class Cwhyh {
 	@Column
 	private String jgxz14;
 	@Column
-	private String[] jgxz15;
+	private String jgxz15;
 	@Column
 	private String jgxz16;
 	@Column
@@ -206,42 +206,23 @@ public class Cwhyh {
 	private String jgxz7_qita;
 	@Column
 	private String jgxz8_qita;
-
 	public Integer getId() {
 		return id;
 	}
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getJgxz1_qita() {
-		return jgxz1_qita;
-	}
-	public void setJgxz1_qita(String jgxz1_qita) {
-		this.jgxz1_qita = jgxz1_qita;
-	}
-	public String getJgxz6_qita() {
-		return jgxz6_qita;
-	}
-	public void setJgxz6_qita(String jgxz6_qita) {
-		this.jgxz6_qita = jgxz6_qita;
-	}
-	public String getJgxz7_qita() {
-		return jgxz7_qita;
-	}
-	public void setJgxz7_qita(String jgxz7_qita) {
-		this.jgxz7_qita = jgxz7_qita;
-	}
-	public String getJgxz8_qita() {
-		return jgxz8_qita;
-	}
-	public void setJgxz8_qita(String jgxz8_qita) {
-		this.jgxz8_qita = jgxz8_qita;
-	}
 	public String getUsername() {
 		return username;
 	}
 	public void setUsername(String username) {
 		this.username = username;
+	}
+	public String getSurveydate() {
+		return surveydate;
+	}
+	public void setSurveydate(String surveydate) {
+		this.surveydate = surveydate;
 	}
 	public String getSheng() {
 		return sheng;
@@ -441,10 +422,10 @@ public class Cwhyh {
 	public void setNlgc5(String nlgc5) {
 		this.nlgc5 = nlgc5;
 	}
-	public String[] getGgfwss() {
+	public String getGgfwss() {
 		return ggfwss;
 	}
-	public void setGgfwss(String[] ggfwss) {
+	public void setGgfwss(String ggfwss) {
 		this.ggfwss = ggfwss;
 	}
 	public String getYhdl() {
@@ -573,10 +554,10 @@ public class Cwhyh {
 	public void setSfzhyjjz(String sfzhyjjz) {
 		this.sfzhyjjz = sfzhyjjz;
 	}
-	public String[] getZyzlzywt() {
+	public String getZyzlzywt() {
 		return zyzlzywt;
 	}
-	public void setZyzlzywt(String[] zyzlzywt) {
+	public void setZyzlzywt(String zyzlzywt) {
 		this.zyzlzywt = zyzlzywt;
 	}
 	public String getJkpgbg() {
@@ -711,22 +692,22 @@ public class Cwhyh {
 	public void setJgxz5(String jgxz5) {
 		this.jgxz5 = jgxz5;
 	}
-	public String[] getJgxz6() {
+	public String getJgxz6() {
 		return jgxz6;
 	}
-	public void setJgxz6(String[] jgxz6) {
+	public void setJgxz6(String jgxz6) {
 		this.jgxz6 = jgxz6;
 	}
-	public String[] getJgxz7() {
+	public String getJgxz7() {
 		return jgxz7;
 	}
-	public void setJgxz7(String[] jgxz7) {
+	public void setJgxz7(String jgxz7) {
 		this.jgxz7 = jgxz7;
 	}
-	public String[] getJgxz8() {
+	public String getJgxz8() {
 		return jgxz8;
 	}
-	public void setJgxz8(String[] jgxz8) {
+	public void setJgxz8(String jgxz8) {
 		this.jgxz8 = jgxz8;
 	}
 	public String getJgxz9() {
@@ -735,10 +716,10 @@ public class Cwhyh {
 	public void setJgxz9(String jgxz9) {
 		this.jgxz9 = jgxz9;
 	}
-	public String[] getJgxz10() {
+	public String getJgxz10() {
 		return jgxz10;
 	}
-	public void setJgxz10(String[] jgxz10) {
+	public void setJgxz10(String jgxz10) {
 		this.jgxz10 = jgxz10;
 	}
 	public String getJgxz11() {
@@ -771,10 +752,10 @@ public class Cwhyh {
 	public void setJgxz14(String jgxz14) {
 		this.jgxz14 = jgxz14;
 	}
-	public String[] getJgxz15() {
+	public String getJgxz15() {
 		return jgxz15;
 	}
-	public void setJgxz15(String[] jgxz15) {
+	public void setJgxz15(String jgxz15) {
 		this.jgxz15 = jgxz15;
 	}
 	public String getJgxz16() {
@@ -789,10 +770,28 @@ public class Cwhyh {
 	public void setJgxz17(String jgxz17) {
 		this.jgxz17 = jgxz17;
 	}
-	public String getSurveydate() {
-		return surveydate;
+	public String getJgxz1_qita() {
+		return jgxz1_qita;
 	}
-	public void setSurveydate(String surveydate) {
-		this.surveydate = surveydate;
+	public void setJgxz1_qita(String jgxz1_qita) {
+		this.jgxz1_qita = jgxz1_qita;
+	}
+	public String getJgxz6_qita() {
+		return jgxz6_qita;
+	}
+	public void setJgxz6_qita(String jgxz6_qita) {
+		this.jgxz6_qita = jgxz6_qita;
+	}
+	public String getJgxz7_qita() {
+		return jgxz7_qita;
+	}
+	public void setJgxz7_qita(String jgxz7_qita) {
+		this.jgxz7_qita = jgxz7_qita;
+	}
+	public String getJgxz8_qita() {
+		return jgxz8_qita;
+	}
+	public void setJgxz8_qita(String jgxz8_qita) {
+		this.jgxz8_qita = jgxz8_qita;
 	}
 }

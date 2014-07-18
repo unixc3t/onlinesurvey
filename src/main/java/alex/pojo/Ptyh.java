@@ -39,25 +39,25 @@ public class Ptyh {
 	@Column
 	private String tymj;
 	@Column
-	private String[] tygn;
+	private String tygn;
 	@Column
-	private String[] syhzrl;
+	private String syhzrl;
 	@Column
-	private String[] hjxz1;
+	private String hjxz1;
 	@Column
 	private String hjxz2;
 	@Column
-	private String[] hjxz3;
+	private String hjxz3;
 	@Column
 	private String hjxz4;
 	@Column
-	private String[] hjxz5;
+	private String hjxz5;
 	@Column
 	private String hjxz6;
 	@Column
 	private String hjxz7;
 	@Column
-	private String[] hjxz8;
+	private String hjxz8;
 	@Column
 	private String hjxz9;
 	@Column
@@ -65,15 +65,15 @@ public class Ptyh {
 	@Column
 	private String hjxz10;
 	@Column
-	private String[] hjxz11;
+	private String hjxz11;
 	@Column
-	private String[] hjxz12;
+	private String hjxz12;
 	@Column
 	private String hjxz13;
 	@Column
 	private String hjxz14;
 	@Column
-	private String[] hjxz15;
+	private String hjxz15;
 	@Column
 	private String hjxz16_1;
 	@Column
@@ -99,15 +99,15 @@ public class Ptyh {
 	@Column
 	private String stzc3;
 	@Column
-	private String[] stzc4;
+	private String stzc4;
 	@Column
-	private String[] jgxz1;
+	private String jgxz1;
 	@Column
-	private String[] jgxz2;
+	private String jgxz2;
 	@Column
 	private String jgxz3;
 	@Column
-	private String[] jgxz4;
+	private String jgxz4;
 	@Column
 	private String jgxz5;
 	@Column
@@ -198,22 +198,22 @@ public class Ptyh {
 	public void setTymj(String tymj) {
 		this.tymj = tymj;
 	}
-	public String[] getTygn() {
+	public String getTygn() {
 		return tygn;
 	}
-	public void setTygn(String[] tygn) {
+	public void setTygn(String tygn) {
 		this.tygn = tygn;
 	}
-	public String[] getSyhzrl() {
+	public String getSyhzrl() {
 		return syhzrl;
 	}
-	public void setSyhzrl(String[] syhzrl) {
+	public void setSyhzrl(String syhzrl) {
 		this.syhzrl = syhzrl;
 	}
-	public String[] getHjxz1() {
+	public String getHjxz1() {
 		return hjxz1;
 	}
-	public void setHjxz1(String[] hjxz1) {
+	public void setHjxz1(String hjxz1) {
 		this.hjxz1 = hjxz1;
 	}
 	public String getHjxz2() {
@@ -222,10 +222,10 @@ public class Ptyh {
 	public void setHjxz2(String hjxz2) {
 		this.hjxz2 = hjxz2;
 	}
-	public String[] getHjxz3() {
+	public String getHjxz3() {
 		return hjxz3;
 	}
-	public void setHjxz3(String[] hjxz3) {
+	public void setHjxz3(String hjxz3) {
 		this.hjxz3 = hjxz3;
 	}
 	public String getHjxz4() {
@@ -234,10 +234,10 @@ public class Ptyh {
 	public void setHjxz4(String hjxz4) {
 		this.hjxz4 = hjxz4;
 	}
-	public String[] getHjxz5() {
+	public String getHjxz5() {
 		return hjxz5;
 	}
-	public void setHjxz5(String[] hjxz5) {
+	public void setHjxz5(String hjxz5) {
 		this.hjxz5 = hjxz5;
 	}
 	public String getHjxz6() {
@@ -252,10 +252,10 @@ public class Ptyh {
 	public void setHjxz7(String hjxz7) {
 		this.hjxz7 = hjxz7;
 	}
-	public String[] getHjxz8() {
+	public String getHjxz8() {
 		return hjxz8;
 	}
-	public void setHjxz8(String[] hjxz8) {
+	public void setHjxz8(String hjxz8) {
 		this.hjxz8 = hjxz8;
 	}
 	public String getHjxz9() {
@@ -276,16 +276,16 @@ public class Ptyh {
 	public void setHjxz10(String hjxz10) {
 		this.hjxz10 = hjxz10;
 	}
-	public String[] getHjxz11() {
+	public String getHjxz11() {
 		return hjxz11;
 	}
-	public void setHjxz11(String[] hjxz11) {
+	public void setHjxz11(String hjxz11) {
 		this.hjxz11 = hjxz11;
 	}
-	public String[] getHjxz12() {
+	public String getHjxz12() {
 		return hjxz12;
 	}
-	public void setHjxz12(String[] hjxz12) {
+	public void setHjxz12(String hjxz12) {
 		this.hjxz12 = hjxz12;
 	}
 	public String getHjxz13() {
@@ -300,10 +300,10 @@ public class Ptyh {
 	public void setHjxz14(String hjxz14) {
 		this.hjxz14 = hjxz14;
 	}
-	public String[] getHjxz15() {
+	public String getHjxz15() {
 		return hjxz15;
 	}
-	public void setHjxz15(String[] hjxz15) {
+	public void setHjxz15(String hjxz15) {
 		this.hjxz15 = hjxz15;
 	}
 	public String getHjxz16_1() {
@@ -378,22 +378,22 @@ public class Ptyh {
 	public void setStzc3(String stzc3) {
 		this.stzc3 = stzc3;
 	}
-	public String[] getStzc4() {
+	public String getStzc4() {
 		return stzc4;
 	}
-	public void setStzc4(String[] stzc4) {
+	public void setStzc4(String stzc4) {
 		this.stzc4 = stzc4;
 	}
-	public String[] getJgxz1() {
+	public String getJgxz1() {
 		return jgxz1;
 	}
-	public void setJgxz1(String[] jgxz1) {
+	public void setJgxz1(String jgxz1) {
 		this.jgxz1 = jgxz1;
 	}
-	public String[] getJgxz2() {
+	public String getJgxz2() {
 		return jgxz2;
 	}
-	public void setJgxz2(String[] jgxz2) {
+	public void setJgxz2(String jgxz2) {
 		this.jgxz2 = jgxz2;
 	}
 	public String getJgxz3() {
@@ -402,10 +402,10 @@ public class Ptyh {
 	public void setJgxz3(String jgxz3) {
 		this.jgxz3 = jgxz3;
 	}
-	public String[] getJgxz4() {
+	public String getJgxz4() {
 		return jgxz4;
 	}
-	public void setJgxz4(String[] jgxz4) {
+	public void setJgxz4(String jgxz4) {
 		this.jgxz4 = jgxz4;
 	}
 	public String getJgxz5() {
@@ -426,5 +426,4 @@ public class Ptyh {
 	public void setAizheng(String aizheng) {
 		this.aizheng = aizheng;
 	}
-	
 }
