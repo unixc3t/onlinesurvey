@@ -25,4 +25,6 @@ public interface SurveyService {
 	public Ptyh getPtyhById(int userid);
 	//通过ID获取村委会用户问卷
 	public Cwhyh getCwhyhById(int userid);
+	//更新普通用户
+	public void updateptyhByPtyh(Ptyh ptyh);
 }

@@ -11,7 +11,7 @@ import alex.service.SurveyService;
 /**
  * @author liuzhilong<alexmaven@icloud.com>
  */
-public class SurveyServiceImpl extends NameEntityService<Ptyh> implements
+public class SurveyServiceImpl extends NameEntityService<Object> implements
 		SurveyService {
 
 	public void InsPtyh(Ptyh ptyh) {
@@ -44,5 +44,9 @@ public class SurveyServiceImpl extends NameEntityService<Ptyh> implements
 
 	public Cwhyh getCwhyhById(int userid) {
 		return dao().fetch(Cwhyh.class, userid);
+	}
+
+	public void updateptyhByPtyh(Ptyh ptyh) {
+		dao().update(ptyh);
 	}
 }

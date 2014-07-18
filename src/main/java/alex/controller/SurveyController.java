@@ -8,12 +8,14 @@ import java.util.UUID;
 import javax.servlet.http.HttpServletRequest;
 
 import org.nutz.ioc.annotation.InjectName;
+import org.nutz.mvc.View;
 import org.nutz.mvc.annotation.AdaptBy;
 import org.nutz.mvc.annotation.At;
 import org.nutz.mvc.annotation.Ok;
 import org.nutz.mvc.annotation.Param;
 import org.nutz.mvc.upload.TempFile;
 import org.nutz.mvc.upload.UploadAdaptor;
+import org.nutz.mvc.view.ForwardView;
 
 import alex.pojo.Cwhyh;
 import alex.pojo.Ptyh;
@@ -31,13 +33,13 @@ public class SurveyController {
 
 	// 普通用户生主页
 	@At("initsu")
-	@Ok("jsp:survey.init")
+	@Ok("jsp:survey.ptyh")
 	public void initsurvey() {
 	}
 
 	// 村委会用户生主页
 	@At("initsp")
-	@Ok("jsp:survey.init2")
+	@Ok("jsp:survey.cwhyh")
 	public void initsurvey2() {
 	}
 
@@ -115,5 +117,14 @@ public class SurveyController {
 	@Ok("jsp:list.ptyh")
 	public void selptyh(int userid, HttpServletRequest request) {
 		request.setAttribute("ptyh", surveyService.getPtyhById(userid));
+	}
+	
+	// 更新普通用户问卷
+	@At("updateptyh")
+	public View updateptyh(@Param(value = "..") Ptyh ptyh, HttpServletRequest request) {
+		ptyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,
+				DateFormat.LONG).format(new Date()));
+		surveyService.updateptyhByPtyh(ptyh);
+		return new ForwardView("/showmsg");
 	}
 }
