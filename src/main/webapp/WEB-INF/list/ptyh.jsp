@@ -1,13 +1,13 @@
 <%@page import="alex.pojo.Ptyh"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-<%@page language="java" contentType="text/html; charset=UTF-8" import="java.util.*" pageEncoding="UTF-8"%>
+<%@page language="java" contentType="text/html; charset=UTF-8" import="java.util.*" pageEncoding="utf-8"%>
 <%@include file="/common/common.jsp"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>宜居乡村社区健康调查平台</title>
 </head>
 <body>
@@ -344,11 +344,11 @@
 				</fieldset>
 				<fieldset style="width: 48.5%; float: left; margin-left: 1.5%;">
 					<legend>4.您家庭院内绿化主要方式</legend>
-					<input type="checkbox" style="margin-left: 2%;" value="1" id="stzc4_1" name="stzc4" ${(ptyh.stzc4=='1')?'checked' : ''}/>种菜 
-					<input type="checkbox" style="margin-left: 2%;" value="2" id="stzc4_2" name="stzc4" ${(ptyh.stzc4=='2')?'checked' : ''}/>种果树 
-					<input type="checkbox" style="margin-left: 2%;" value="3" id="stzc4_3" name="stzc4" ${(ptyh.stzc4=='3')?'checked' : ''}/>非经济树种
-					<input type="checkbox" style="margin-left: 2%;" value="4" id="stzc4_4" name="stzc4" ${(ptyh.stzc4=='4')?'checked' : ''}/>种观赏花 
-					<input type="checkbox" style="margin-left: 2%;" value="5" id="stzc4_5" name="stzc4" ${(ptyh.stzc4=='5')?'checked' : ''}/>其他
+					<input type="checkbox" style="margin-left: 2%;" value="1" id="stzc4_1" name="stzc4" <c:if test="${fn:contains(ptyh.stzc4,'1')}">checked=true</c:if>/>种菜 
+					<input type="checkbox" style="margin-left: 2%;" value="2" id="stzc4_2" name="stzc4" <c:if test="${fn:contains(ptyh.stzc4,'2')}">checked=true</c:if>/>种果树 
+					<input type="checkbox" style="margin-left: 2%;" value="3" id="stzc4_3" name="stzc4" <c:if test="${fn:contains(ptyh.stzc4,'3')}">checked=true</c:if>/>非经济树种
+					<input type="checkbox" style="margin-left: 2%;" value="4" id="stzc4_4" name="stzc4" <c:if test="${fn:contains(ptyh.stzc4,'4')}">checked=true</c:if>/>种观赏花 
+					<input type="checkbox" style="margin-left: 2%;" value="5" id="stzc4_5" name="stzc4" <c:if test="${fn:contains(ptyh.stzc4,'5')}">checked=true</c:if>/>其他
 				</fieldset>
 				<div class="clear" />
 			</div>

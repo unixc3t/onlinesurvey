@@ -1,6 +1,7 @@
 package alex.controller;
 
 import java.io.File;
+import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.UUID;
@@ -115,7 +116,7 @@ public class SurveyController {
 	// 浏览普通用户问卷
 	@At("selptyh")
 	@Ok("jsp:list.ptyh")
-	public void selptyh(int userid, HttpServletRequest request) {
+	public void selptyh(int userid, HttpServletRequest request) throws UnsupportedEncodingException {
 		request.setAttribute("ptyh", surveyService.getPtyhById(userid));
 	}
 	
