@@ -49,4 +49,8 @@ public class SurveyServiceImpl extends NameEntityService<Object> implements
 	public void updateptyhByPtyh(Ptyh ptyh) {
 		dao().update(ptyh);
 	}
+
+	public void updatecwhyhByCwhyh(Cwhyh cwhyh) {
+		dao().update(cwhyh);
+	}
 }

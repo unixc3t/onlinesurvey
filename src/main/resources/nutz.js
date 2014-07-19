@@ -80,7 +80,7 @@ var ioc = {
 			// 单个文件最大尺寸(大约的值，单位为字节，即 1048576 为 1M)
 			maxFileSize : 10485760,
 			// 正则表达式匹配可以支持的文件名
-			nameFilter : '^(.+[.])(xls|xlsx)$'
+			nameFilter : '^(.+[.])(xls)$'
 		}
 	},
 	myUpload : {

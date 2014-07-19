@@ -27,4 +27,6 @@ public interface SurveyService {
 	public Cwhyh getCwhyhById(int userid);
 	//更新普通用户
 	public void updateptyhByPtyh(Ptyh ptyh);
+	//更新村委会用户
+	public void updatecwhyhByCwhyh(Cwhyh cwhyh);
 }

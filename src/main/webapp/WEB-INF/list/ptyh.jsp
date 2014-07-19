@@ -17,7 +17,6 @@
 <h4 class="alert_info">如需对数据进行更新，请在修改数据之后，点击页面下方的修改数据</h4>
 <div id="bodystart">
 		<a name="jbqk" />
-		<form action="ptyh" onsubmit="return validate_form(this)" method="post">
 			<article class="module width_full"> <header>
 			<h3>基本情况</h3>
 			</header>

@@ -105,7 +105,7 @@
 	<!-- end of sidebar -->
 
 	<section id="main" class="column">
-	<h4 class="alert_info">欢迎使用宜居乡村社区健康调查平台</h4>
+	<h4 class="alert_info">欢迎使用宜居乡村社区健康调查平台,只允许上传Excel 97-2003版本的数据表！</h4>
 	<form action="cwhyh" method="post" enctype="multipart/form-data">
 	<a name="wjdj" />
 	<article class="module width_full"> <header>

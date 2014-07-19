@@ -66,16 +66,16 @@ public class SurveyController {
 		String uploadroot = request.getSession().getServletContext()
 				.getRealPath("/")
 				+ "upload\\";
-		if (tf != null || tf2 != null) {
-			String jkpgbgfilename = uploadroot + uuid1
-					+ tf.getMeta().getFileLocalName();
-			String zrzccldcbfilename = uploadroot + uuid2
-					+ tf2.getMeta().getFileLocalName();
+		if (tf != null) {
+			String jkpgbgfilename = uploadroot + uuid1 + ".xls";
 			File tFile1 = tf.getFile();
-			File tFile2 = tf.getFile();
 			myutils.copyFile(tFile1.toString(), jkpgbgfilename);
-			myutils.copyFile(tFile2.toString(), zrzccldcbfilename);
 			cwhyh.setJkpgbg(uuid1);
+		}
+		if (tf2 != null) {
+			String zrzccldcbfilename = uploadroot + uuid2 + ".xls";
+			File tFile2 = tf2.getFile();
+			myutils.copyFile(tFile2.toString(), zrzccldcbfilename);
 			cwhyh.setZrzccldcb(uuid2);
 		}
 		cwhyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,
@@ -116,16 +116,47 @@ public class SurveyController {
 	// 浏览普通用户问卷
 	@At("selptyh")
 	@Ok("jsp:list.ptyh")
-	public void selptyh(int userid, HttpServletRequest request) throws UnsupportedEncodingException {
+	public void selptyh(int userid, HttpServletRequest request)
+			throws UnsupportedEncodingException {
 		request.setAttribute("ptyh", surveyService.getPtyhById(userid));
 	}
-	
+
 	// 更新普通用户问卷
 	@At("updateptyh")
-	public View updateptyh(@Param(value = "..") Ptyh ptyh, HttpServletRequest request) {
+	public View updateptyh(@Param(value = "..") Ptyh ptyh,
+			HttpServletRequest request) {
 		ptyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,
 				DateFormat.LONG).format(new Date()));
 		surveyService.updateptyhByPtyh(ptyh);
+		return new ForwardView("/showmsg");
+	}
+
+	// 更新村委会用户问卷
+	@At("updatecwhyh")
+	@AdaptBy(type = UploadAdaptor.class, args = { "ioc:myUpload" })
+	public View updatecwhyh(@Param(value = "..") Cwhyh cwhyh,
+			HttpServletRequest request, @Param("jkpgbg") TempFile tf,
+			@Param("zrzccldcb") TempFile tf2) {
+		String uuid1 = UUID.randomUUID().toString();
+		String uuid2 = UUID.randomUUID().toString();
+		String uploadroot = request.getSession().getServletContext()
+				.getRealPath("/")
+				+ "upload\\";
+		if (tf != null) {
+			String jkpgbgfilename = uploadroot + uuid1 + ".xls";
+			File tFile1 = tf.getFile();
+			myutils.copyFile(tFile1.toString(), jkpgbgfilename);
+			cwhyh.setJkpgbg(uuid1);
+		}
+		if (tf2 != null) {
+			String zrzccldcbfilename = uploadroot + uuid2 + ".xls";
+			File tFile2 = tf2.getFile();
+			myutils.copyFile(tFile2.toString(), zrzccldcbfilename);
+			cwhyh.setZrzccldcb(uuid2);
+		}
+		cwhyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,
+				DateFormat.LONG).format(new Date()));
+		surveyService.updatecwhyhByCwhyh(cwhyh);
 		return new ForwardView("/showmsg");
 	}
 }
