@@ -13,7 +13,6 @@
 <form action="updatecwhyh" method="post" enctype="multipart/form-data">
 <section id="main" class="column" style="width: 99%; float: left;">
 <h4 class="alert_info">更新村委会用户数据表格的时候，在原位置重新上传即可！</h4>
-<a href="/upload/${cwhyh.jkpgbg}" />
 <div id="bodystart">
 <article class="module width_full"> <header>
 	<h3>问卷登记</h3>
@@ -320,7 +319,14 @@
 	</header>
 	<div class="module_content">
 	<fieldset style="width: 100%; float: left;">
-			<legend>请上传健康评估调查表</legend>
+			<legend>下载原健康评估调查表</legend>
+			<c:if test="${!empty cwhyh.jkpgbg}">
+				<a href="downloadjk/?userid=${cwhyh.id}"  style="margin-left: 2%;">原健康评估调查表</a>
+			</c:if>
+	</fieldset>
+		<div class="clear"/>
+	<fieldset style="width: 100%; float: left;">
+			<legend>上传新的健康评估调查表</legend>
 			<input type="file" style="margin-left: 2%;" id="jkpgbg" name="jkpgbg" />
 	</fieldset>
 		<div class="clear"/>
@@ -429,7 +435,14 @@
 				</fieldset>
 		<div class="clear"/>
 	<fieldset style="width: 98.5%; float: left;">
-			<legend>请上传乡村社区自然资产存量调查表</legend>
+			<legend>下载原乡村社区自然资产存量调查表</legend>
+			<c:if test="${!empty cwhyh.zrzccldcb}">
+				<a href="downloadzr/?userid=${cwhyh.id}"  style="margin-left: 2%;">原乡村社区自然资产存量调查表</a>\
+			</c:if>
+	</fieldset>
+		<div class="clear" />
+	<fieldset style="width: 98.5%; float: left;">
+			<legend>上传新的乡村社区自然资产存量调查表</legend>
 			<input type="file" style="margin-left: 2%;" id="zrzccldcb" name="zrzccldcb" />
 	</fieldset>
 		<div class="clear" />

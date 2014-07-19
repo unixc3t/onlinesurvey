@@ -159,4 +159,19 @@ public class SurveyController {
 		surveyService.updatecwhyhByCwhyh(cwhyh);
 		return new ForwardView("/showmsg");
 	}
+	
+	
+	@At("downloadjk")
+	@Ok("raw")
+	public File downloadjk(int userid) {
+		String downloadpath = myutils.getPath("/upload") + "\\" + surveyService.getCwhyhById(userid).getJkpgbg()+ ".xls";
+		return new File(downloadpath);
+	}
+	
+	@At("downloadzr")
+	@Ok("raw")
+	public File downloadzr(int userid) {
+		String downloadpath = myutils.getPath("/upload") + "\\" + surveyService.getCwhyhById(userid).getZrzccldcb()+ ".xls";
+		return new File(downloadpath);
+	}
 }
