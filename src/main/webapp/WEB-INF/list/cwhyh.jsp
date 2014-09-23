@@ -437,7 +437,7 @@
 	<fieldset style="width: 98.5%; float: left;">
 			<legend>下载原乡村社区自然资产存量调查表</legend>
 			<c:if test="${!empty cwhyh.zrzccldcb}">
-				<a href="downloadzr/?userid=${cwhyh.id}"  style="margin-left: 2%;">原乡村社区自然资产存量调查表</a>\
+				<a href="downloadzr/?userid=${cwhyh.id}"  style="margin-left: 2%;">原乡村社区自然资产存量调查表</a>
 			</c:if>
 	</fieldset>
 		<div class="clear" />
