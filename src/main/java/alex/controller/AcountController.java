@@ -27,7 +27,7 @@ public class AcountController {
 	public View useLogin(@Param(value = "..") User user,
 			HttpServletRequest request) {
 		if (accountService.login(user)) {
-			logger.info("用户尝试登陆：username：" + user.getUsername() + "password" + user.getPassword().hashCode());
+			logger.info("用户尝试登陆：username：" + user.getUsername() + "| password：" + user.getPassword().hashCode());
 			request.getSession().setAttribute("username", user.getUsername());
 			return new ForwardView("/showmsg");
 		} else {
