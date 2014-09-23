@@ -9,6 +9,7 @@ import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.log4j.Logger;
 import org.nutz.ioc.annotation.InjectName;
 import org.nutz.mvc.View;
 import org.nutz.mvc.annotation.AdaptBy;
@@ -31,7 +32,8 @@ import alex.util.FileUtil;
 @InjectName("surveyController")
 public class SurveyController {
 	private SurveyService surveyService;
-
+	private Logger logger = Logger.getLogger(SurveyController.class);
+	
 	// 普通用户生主页
 	@At("initsu")
 	@Ok("jsp:survey.ptyh")
@@ -51,6 +53,7 @@ public class SurveyController {
 		ptyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,
 				DateFormat.LONG).format(new Date()));
 		surveyService.InsPtyh(ptyh);
+		logger.info("添加了一个普通用户问卷" + ptyh.toString());
 		request.setAttribute("ifok", "1");
 	}
 
@@ -79,6 +82,7 @@ public class SurveyController {
 		cwhyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,
 				DateFormat.LONG).format(new Date()));
 		surveyService.InsCwhyh(cwhyh);
+		logger.info("持久化村委会用户问卷" + cwhyh.toString());
 		request.setAttribute("ifok", "1");
 	}
 
@@ -126,6 +130,7 @@ public class SurveyController {
 		ptyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,
 				DateFormat.LONG).format(new Date()));
 		surveyService.updateptyhByPtyh(ptyh);
+		logger.info("更新普通用户问卷" + ptyh.toString());
 		return new ForwardView("/showmsg");
 	}
 
@@ -153,6 +158,7 @@ public class SurveyController {
 		cwhyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,
 				DateFormat.LONG).format(new Date()));
 		surveyService.updatecwhyhByCwhyh(cwhyh);
+		logger.info("更新村委会用户问卷" + cwhyh.toString());
 		return new ForwardView("/showmsg");
 	}
 	
@@ -161,6 +167,7 @@ public class SurveyController {
 	@Ok("raw")
 	public File downloadjk(int userid) {
 		String downloadpath = FileUtil.getPath("/upload") + File.separator + surveyService.getCwhyhById(userid).getJkpgbg()+ ".xls";
+		logger.info("申请下载文件：" + downloadpath);
 		return new File(downloadpath);
 	}
 	
@@ -168,6 +175,7 @@ public class SurveyController {
 	@Ok("raw")
 	public File downloadzr(int userid) {
 		String downloadpath = FileUtil.getPath("/upload") + File.separator + surveyService.getCwhyhById(userid).getZrzccldcb()+ ".xls";
+		logger.info("申请下载文件：" + downloadpath);
 		return new File(downloadpath);
 	}
 }

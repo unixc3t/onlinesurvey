@@ -2,6 +2,7 @@ package alex.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.log4j.Logger;
 import org.nutz.ioc.annotation.InjectName;
 import org.nutz.mvc.View;
 import org.nutz.mvc.annotation.At;
@@ -19,12 +20,14 @@ import alex.service.AccountService;
 @InjectName("acountController")
 public class AcountController {
 	private AccountService accountService;
+	private Logger logger = Logger.getLogger(AcountController.class);
 	
 	//登陆
 	@At("login")
 	public View useLogin(@Param(value = "..") User user,
 			HttpServletRequest request) {
 		if (accountService.login(user)) {
+			logger.info("用户尝试登陆：username：" + user.getUsername() + "password" + user.getPassword().hashCode());
 			request.getSession().setAttribute("username", user.getUsername());
 			return new ForwardView("/showmsg");
 		} else {
