@@ -46,19 +46,16 @@ var ioc = {
 		fields : {
 			surveyService : {
 				refer : 'surveyService'
-			},
-			myutils : {
-				refer : 'utils'
 			}
 		}
 	},
 	utils : {
-		type : 'alex.util.MyUtils',
+		type : 'alex.util.FileUtil',
 		fields : {
 			sc : {
 				app : '$servlet'
 			}
-		// 将 ServletContext 对象注入 MyUtils
+		// 将 ServletContext 对象注入 FileUtil
 		}
 	},
 	tmpFilePool : {
