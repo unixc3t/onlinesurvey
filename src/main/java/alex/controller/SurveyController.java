@@ -1,6 +1,7 @@
 package alex.controller;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
 import java.util.Date;
@@ -21,7 +22,7 @@ import org.nutz.mvc.view.ForwardView;
 import alex.pojo.Cwhyh;
 import alex.pojo.Ptyh;
 import alex.service.SurveyService;
-import alex.util.MyUtils;
+import alex.util.FileUtil;
 
 /**
  * @author Liuzhilong<alexmaven@icloud.com>
@@ -30,7 +31,6 @@ import alex.util.MyUtils;
 @InjectName("surveyController")
 public class SurveyController {
 	private SurveyService surveyService;
-	private MyUtils myutils;
 
 	// 普通用户生主页
 	@At("initsu")
@@ -60,22 +60,20 @@ public class SurveyController {
 	@AdaptBy(type = UploadAdaptor.class, args = { "ioc:myUpload" })
 	public void ptyh(@Param(value = "..") Cwhyh cwhyh,
 			HttpServletRequest request, @Param("jkpgbg") TempFile tf,
-			@Param("zrzccldcb") TempFile tf2) {
+			@Param("zrzccldcb") TempFile tf2) throws IOException {
 		String uuid1 = UUID.randomUUID().toString();
 		String uuid2 = UUID.randomUUID().toString();
 		String uploadroot = request.getSession().getServletContext()
 				.getRealPath("/")
-				+ "upload\\";
+				+ "upload" + File.separator;
 		if (tf != null) {
 			String jkpgbgfilename = uploadroot + uuid1 + ".xls";
-			File tFile1 = tf.getFile();
-			myutils.copyFile(tFile1.toString(), jkpgbgfilename);
+			FileUtil.copyFile(tf.getFile().toString(),jkpgbgfilename);
 			cwhyh.setJkpgbg(uuid1);
 		}
 		if (tf2 != null) {
 			String zrzccldcbfilename = uploadroot + uuid2 + ".xls";
-			File tFile2 = tf2.getFile();
-			myutils.copyFile(tFile2.toString(), zrzccldcbfilename);
+			FileUtil.copyFile(tf2.getFile().toString(), zrzccldcbfilename);
 			cwhyh.setZrzccldcb(uuid2);
 		}
 		cwhyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,
@@ -95,7 +93,7 @@ public class SurveyController {
 	// 删除普通问卷
 	@At("delptyh")
 	@Ok("redirect:/showmsg")
-	public void delptyh(int userid) {
+	public void deletePtyh(int userid) {
 		surveyService.delPtyhById(userid);
 	}
 
@@ -141,17 +139,15 @@ public class SurveyController {
 		String uuid2 = UUID.randomUUID().toString();
 		String uploadroot = request.getSession().getServletContext()
 				.getRealPath("/")
-				+ "upload\\";
+				+ "upload" + File.separator;
 		if (tf != null) {
 			String jkpgbgfilename = uploadroot + uuid1 + ".xls";
-			File tFile1 = tf.getFile();
-			myutils.copyFile(tFile1.toString(), jkpgbgfilename);
+			FileUtil.copyFile(tf.getFile().toString(), jkpgbgfilename);
 			cwhyh.setJkpgbg(uuid1);
 		}
 		if (tf2 != null) {
 			String zrzccldcbfilename = uploadroot + uuid2 + ".xls";
-			File tFile2 = tf2.getFile();
-			myutils.copyFile(tFile2.toString(), zrzccldcbfilename);
+			FileUtil.copyFile(tf2.getFile().toString(), zrzccldcbfilename);
 			cwhyh.setZrzccldcb(uuid2);
 		}
 		cwhyh.setSurveydate(DateFormat.getDateTimeInstance(DateFormat.LONG,
@@ -164,14 +160,14 @@ public class SurveyController {
 	@At("downloadjk")
 	@Ok("raw")
 	public File downloadjk(int userid) {
-		String downloadpath = myutils.getPath("/upload") + "\\" + surveyService.getCwhyhById(userid).getJkpgbg()+ ".xls";
+		String downloadpath = FileUtil.getPath("/upload") + File.separator + surveyService.getCwhyhById(userid).getJkpgbg()+ ".xls";
 		return new File(downloadpath);
 	}
 	
 	@At("downloadzr")
 	@Ok("raw")
 	public File downloadzr(int userid) {
-		String downloadpath = myutils.getPath("/upload") + "\\" + surveyService.getCwhyhById(userid).getZrzccldcb()+ ".xls";
+		String downloadpath = FileUtil.getPath("/upload") + File.separator + surveyService.getCwhyhById(userid).getZrzccldcb()+ ".xls";
 		return new File(downloadpath);
 	}
 }
