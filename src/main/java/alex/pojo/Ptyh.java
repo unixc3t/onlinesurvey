@@ -426,4 +426,27 @@ public class Ptyh {
 	public void setAizheng(String aizheng) {
 		this.aizheng = aizheng;
 	}
+	@Override
+	public String toString() {
+		return "Ptyh [id=" + id + ", username=" + username + ", age=" + age
+				+ ", sex=" + sex + ", surveydate=" + surveydate + ", zhiye="
+				+ zhiye + ", cesuoqk=" + cesuoqk + ", whcd=" + whcd
+				+ ", hukou=" + hukou + ", szxz=" + szxz + ", jtrk=" + jtrk
+				+ ", zfjzmj=" + zfjzmj + ", zjdmj=" + zjdmj + ", tymj=" + tymj
+				+ ", tygn=" + tygn + ", syhzrl=" + syhzrl + ", hjxz1=" + hjxz1
+				+ ", hjxz2=" + hjxz2 + ", hjxz3=" + hjxz3 + ", hjxz4=" + hjxz4
+				+ ", hjxz5=" + hjxz5 + ", hjxz6=" + hjxz6 + ", hjxz7=" + hjxz7
+				+ ", hjxz8=" + hjxz8 + ", hjxz9=" + hjxz9 + ", hjxz9_2="
+				+ hjxz9_2 + ", hjxz10=" + hjxz10 + ", hjxz11=" + hjxz11
+				+ ", hjxz12=" + hjxz12 + ", hjxz13=" + hjxz13 + ", hjxz14="
+				+ hjxz14 + ", hjxz15=" + hjxz15 + ", hjxz16_1=" + hjxz16_1
+				+ ", hjxz16_2=" + hjxz16_2 + ", hjxz16_3=" + hjxz16_3
+				+ ", hjxz16_4=" + hjxz16_4 + ", hjxz16_7=" + hjxz16_7
+				+ ", hjxz16_8=" + hjxz16_8 + ", hjxz16_9=" + hjxz16_9
+				+ ", hjxz16_10=" + hjxz16_10 + ", hjxz16_11=" + hjxz16_11
+				+ ", stzc1=" + stzc1 + ", stzc2=" + stzc2 + ", stzc3=" + stzc3
+				+ ", stzc4=" + stzc4 + ", jgxz1=" + jgxz1 + ", jgxz2=" + jgxz2
+				+ ", jgxz3=" + jgxz3 + ", jgxz4=" + jgxz4 + ", jgxz5=" + jgxz5
+				+ ", jianyi=" + jianyi + ", aizheng=" + aizheng + "]";
+	}
 }
